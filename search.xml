@@ -8,7 +8,7 @@
       <link href="2020/12/03/hello-world/"/>
       <url>2020/12/03/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       
@@ -16,5 +16,161 @@
     
     
   
+  
+    
+    
+    <entry>
+      <title>404</title>
+      <link href="404/index.html"/>
+      <url>404/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>偷得浮生半日闲</title>
+      <link href="artitalk/index.html"/>
+      <url>artitalk/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>说说</title>
+      <link href="bb/index.html"/>
+      <url>bb/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="contact/index.html"/>
+      <url>contact/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="friends/index.html"/>
+      <url>friends/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>漫威群英传</title>
+      <link href="marvel/index.html"/>
+      <url>marvel/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/35660.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/167264.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/180123.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/207035.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/247938.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/254473.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/255000.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/256201.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/260421.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/333772fm.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/335807.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/353085.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/375286.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/384251.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/387418.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>千朵万朵压枝低</title>
+      <link href="scenery/index.html"/>
+      <url>scenery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/2.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/3.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/4.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/6.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/7.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/8.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/9.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/10.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/11.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/12.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/13.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/14.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/15.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/16.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/17.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/19.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/20.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/21.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/22.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/23.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>黄四娘家花满蹊</title>
+      <link href="topimgs/index.html"/>
+      <url>topimgs/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/0.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner2.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner3.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner4.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner5.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner6.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>媒体</title>
+      <link href="medias/index.html"/>
+      <url>medias/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图册</title>
+      <link href="pics/index.html"/>
+      <url>pics/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/1.jpg">  <figcaption>  <div class="gallery-group-name">大图</div>  <p>可以放在top_img的</p>  <a href="/topimgs"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>關於漫威的圖片</p>  <a href="/marvel"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/13.jpg">  <figcaption>  <div class="gallery-group-name">风景</div>  <p>适合放在文章封面的</p>  <a href="/scenery"></a>  </figcaption>  </figure>  </div>]]></content>
+      
+    </entry>
+    
+    
   
 </search>
