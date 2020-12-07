@@ -31,17 +31,6 @@
     
     
     <entry>
-      <title>小破站看剧列表</title>
-      <link href="bangumis/index.html"/>
-      <url>bangumis/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我</title>
       <link href="about/index.html"/>
       <url>about/index.html</url>
@@ -56,6 +45,17 @@
       <title>偷得浮生半日闲</title>
       <link href="artitalk/index.html"/>
       <url>artitalk/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小破站看剧列表</title>
+      <link href="bangumis/index.html"/>
+      <url>bangumis/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -86,11 +86,11 @@
     
     
     <entry>
-      <title>友情链接</title>
-      <link href="friends/index.html"/>
-      <url>friends/index.html</url>
+      <title>漫威群英传</title>
+      <link href="marvel/index.html"/>
+      <url>marvel/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/35660.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/167264.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/180123.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/207035.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/247938.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/254473.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/255000.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/256201.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/260421.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/333772fm.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/335807.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/353085.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/375286.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/384251.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/387418.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -109,21 +109,10 @@
     
     <entry>
       <title>友情链接</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
+      <link href="friends/index.html"/>
+      <url>friends/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>漫威群英传</title>
-      <link href="marvel/index.html"/>
-      <url>marvel/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/35660.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/167264.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/180123.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/207035.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/247938.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/254473.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/255000.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/256201.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/260421.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/333772fm.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/335807.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/353085.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/375286.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/384251.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/387418.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -133,6 +122,28 @@
       <title>媒体</title>
       <link href="medias/index.html"/>
       <url>medias/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图册</title>
+      <link href="pics/index.html"/>
+      <url>pics/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/1.jpg">  <figcaption>  <div class="gallery-group-name">大图</div>  <p>可以放在top_img的</p>  <a href="/topimgs"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>關於漫威的圖片</p>  <a href="/marvel"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/13.jpg">  <figcaption>  <div class="gallery-group-name">风景</div>  <p>适合放在文章封面的</p>  <a href="/scenery"></a>  </figcaption>  </figure>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -152,11 +163,11 @@
     
     
     <entry>
-      <title>图册</title>
-      <link href="pics/index.html"/>
-      <url>pics/index.html</url>
+      <title>黄四娘家花满蹊</title>
+      <link href="topimgs/index.html"/>
+      <url>topimgs/index.html</url>
       
-        <content type="html"><![CDATA[<div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/1.jpg">  <figcaption>  <div class="gallery-group-name">大图</div>  <p>可以放在top_img的</p>  <a href="/topimgs"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>關於漫威的圖片</p>  <a href="/marvel"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/13.jpg">  <figcaption>  <div class="gallery-group-name">风景</div>  <p>适合放在文章封面的</p>  <a href="/scenery"></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/0.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner2.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner3.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner4.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner5.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner6.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -168,17 +179,6 @@
       <url>tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黄四娘家花满蹊</title>
-      <link href="topimgs/index.html"/>
-      <url>topimgs/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/0.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner2.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner3.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner4.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner5.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner6.jpg"></p>          </div>]]></content>
       
     </entry>
     
