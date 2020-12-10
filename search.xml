@@ -79,7 +79,7 @@
       <link href="bilibili/index.html"/>
       <url>bilibili/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/%E9%BB%91%E5%8F%91.png">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c1915f220.jpg">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/46132780_p0.png">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/%E9%BB%91%E5%8F%91.png">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c1915f220.jpg">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/46132780_p0.png">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/Sally%20Whitemane.png">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -232,6 +232,17 @@
       <title>标签</title>
       <link href="tags/index.html"/>
       <url>tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>魔兽，我们的青春</title>
+      <link href="wow/index.html"/>
+      <url>wow/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
