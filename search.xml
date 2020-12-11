@@ -8,7 +8,7 @@
       <link href="2020/12/10/shi-pin-zu/"/>
       <url>2020/12/10/shi-pin-zu/</url>
       
-        <content type="html"><![CDATA[<h1 id="如何在网站上放几组不同类型的视频"><a href="#如何在网站上放几组不同类型的视频" class="headerlink" title="如何在网站上放几组不同类型的视频"></a>如何在网站上放几组不同类型的视频</h1><p>有天啊，突发奇想，在博客里加完了相册之后，又想再增加一个分类专门来放一些自己喜欢的视频，<br>有了想法就开工呗。<br>参考相册的功能，它其实是新建了几个页面而已，第一个页面相当于总纲，放置所有的相册分组，第二、三<br>、四…个页面放具体相册的内容，视频其实也是一样的道理。</p><h2 id="开整"><a href="#开整" class="headerlink" title="开整"></a>开整</h2><p>直接上命令：</p><p><code>hexo new page bilibili</code></p><p>因为我主要是用来放小破站的视频，索性命名为<code>bilibili</code>，然后新建不同视频分类的页面：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">hexo new page dongman<br>hexo new page yueyu<br>hexo new page heikeji<br></code></pre></td></tr></tbody></table></figure><p>大致先分为“动漫”、“粤语”、“黑科技”三类吧，之后随时可以增删改。<br>然后配置总纲，打开<code>bilibili</code>页面的<code>index.md</code>，<code>title</code>自己写，<code>type: "bilibili"</code>即可</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">---<br>title: 收藏的视频<br>date: 2020-12-09 22:53:48<br>updated:<br>type: "bilibili"<br>---<br></code></pre></td></tr></tbody></table></figure><p>内容部分：<br>使用<a href="https://butterfly.js.org/posts/4aa8abbe/#Gallery%E7%9B%B8%E5%86%8A%E5%9C%96%E5%BA%AB"> galleryGroup</a>标签外挂，具体使用方法可以参考链接。<br>写法如下：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;div class="gallery-group-main"&gt;<br>{% galleryGroup name description link img-url %}<br>{% galleryGroup name description link img-url %}<br>{% galleryGroup name description link img-url %}<br>&lt;/div&gt;<br></code></pre></td></tr></tbody></table></figure><ul><li>name: 对应你想要分组的名字</li><li>description: 对应这个分组的描述</li><li>link: 该分组的链接</li><li>img_url: 该分组封面图片的链接</li></ul><p>例如：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;div class="gallery-group-main"&gt;<br>{% galleryGroup '粤语' '粤语经典' '/yueyu' https://allenpic.oss-cn-beijing.aliyuncs.com/%E9%BB%91%E5%8F%91.png %}<br>{% galleryGroup '二次元' '二次元收录中心' '/dongman' https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c1915f220.jpg %}<br>{% galleryGroup '科技' '主要是黑科技' '/heikeji' https://allenpic.oss-cn-beijing.aliyuncs.com/46132780_p0.png %}<br>{% galleryGroup '青春' '为了联盟！' '/wow' https://allenpic.oss-cn-beijing.aliyuncs.com/Sally%20Whitemane.png %}<br>&lt;/div&gt;<br></code></pre></td></tr></tbody></table></figure><p>如下图：<br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/videoss.JPG" alt="视频组页面"></p><p>主页面搭好了，接下来就是各个分组的页面了，举其中一个例子来看：<br><code>/yueyu/index.md</code>里编辑：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">---<br>title: 粤语经典<br>date: 2020-12-10 00:12:54<br>updated:<br>type: "yueyu"<br>---<br></code></pre></td></tr></tbody></table></figure><p>在里边写内容和编码，内容就是<code>markdown</code>语法，编码如下：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">&lt;div style="position:relative; padding-bottom:75%; width:100%; height:0"&gt;<br>    &lt;iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"&gt;&lt;/iframe&gt;<br>&lt;/div&gt;<br></code></pre></td></tr></tbody></table></figure><p><code>bilibili</code>默认给的是一个<code>iframe</code>，在<code>ifraame</code>中添加<code>css</code>样式：<code>style="position:absolute;height:100%;width:100%";</code><br>在原来的<code>iframe</code>外面嵌套一层<code>div</code>，然后添加样式：<code>style="position:relative;padding-bottom:75%"</code></p><blockquote><p>写法就是上面的代码，只需要把想要的视频的<code>bvid</code>更换一下就好，其中<code>high_quality=1</code>是选择可用的最高清晰度，实际上也不是<br>特别的高清，毕竟蓝光什么的还得是去人家小破站里去观看。</p></blockquote><p>原理：</p><ul><li><p>frame本身不可自动伸缩</p></li><li><p>iframe宽度和高度设置为100%后，会尽可能的填充满它的父级元素</p></li><li><p>所以在iframe外部嵌套一个div，只要这个div根据页面大小变化按比例变化，就可以实现了</p></li><li><p>iframe使用绝对位置(position: absolute), 默认与父级div的左上角对齐</p></li><li><p>div使用相对位置，并且用padding-bottom，来计算相对父元素的宽度（父元素宽度的75%作为div的高度），100:75则为4:3</p></li></ul><p>实际页面效果如下：<br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/videozs.JPG"></p><p>最后就简单了，把视频组放到主题配置文件的<code>menu</code>里，当然你也可以放在别的地方。</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plain">menu:<br>    ...<br>    视频: /bilibili/ || fas fa-video<br>    ...<br></code></pre></td></tr></tbody></table></figure><hr><p><strong>以上是我学着在自己博客里放一些喜欢的视频的学习笔记，从<a href="https://blog.csdn.net/weixin_41216356/article/details/106911233">SimZhou</a>、<a href="https://butterfly.js.org/">Jerry</a>大佬们那里学到了很多，感谢！！<br>做博客，乐趣就在于折腾，大家玩的开心啊！</strong></p><p>测试一下代码</p><figure class="highlight sql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">"topic"</span>(<br>    <span class="hljs-string">"id"</span> <span class="hljs-built_in">serial</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> PRIMARY <span class="hljs-keyword">KEY</span>,<br>    <span class="hljs-string">"forum_id"</span> <span class="hljs-built_in">integer</span> <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span>,<br>    <span class="hljs-string">"subject"</span> <span class="hljs-built_in">varchar</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span><br>);<br></code></pre></td></tr></tbody></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="如何在网站上放几组不同类型的视频"><a href="#如何在网站上放几组不同类型的视频" class="headerlink" title="如何在网站上放几组不同类型的视频"></a>如何在网站上放几组不同类型的视频</h1><p>有天啊，突发奇想，在博客里加完了相册之后，又想再增加一个分类专门来放一些自己喜欢的视频，<br>有了想法就开工呗。<br>参考相册的功能，它其实是新建了几个页面而已，第一个页面相当于总纲，放置所有的相册分组，第二、三<br>、四…个页面放具体相册的内容，视频其实也是一样的道理。</p><h2 id="开整"><a href="#开整" class="headerlink" title="开整"></a>开整</h2><p>直接上命令：</p><p><code>hexo new page bilibili</code></p><p>因为我主要是用来放小破站的视频，索性命名为<code>bilibili</code>，然后新建不同视频分类的页面：</p><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">hexo new page dongman<br>hexo new page yueyu<br>hexo new page heikeji<br></code></pre></td></tr></tbody></table></figure><p>大致先分为“动漫”、“粤语”、“黑科技”三类吧，之后随时可以增删改。<br>然后配置总纲，打开<code>bilibili</code>页面的<code>index.md</code>，<code>title</code>自己写，<code>type: "bilibili"</code>即可</p><figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">收藏的视频</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-12-09 22:53:48</span><br><span class="hljs-attr">updated:</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">"bilibili"</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></tbody></table></figure><p>内容部分：<br>使用<a href="https://butterfly.js.org/posts/4aa8abbe/#Gallery%E7%9B%B8%E5%86%8A%E5%9C%96%E5%BA%AB"> galleryGroup</a>标签外挂，具体使用方法可以参考链接。<br>写法如下：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;div class="gallery-group-main"&gt;<br>{% galleryGroup name description link img-url %}<br>{% galleryGroup name description link img-url %}<br>{% galleryGroup name description link img-url %}<br>&lt;/<span class="hljs-selector-tag">div</span>&gt;<br></code></pre></td></tr></tbody></table></figure><ul><li>name: 对应你想要分组的名字</li><li>description: 对应这个分组的描述</li><li>link: 该分组的链接</li><li>img_url: 该分组封面图片的链接</li></ul><p>例如：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;div class="gallery-group-main"&gt;<br>{% galleryGroup '粤语' '粤语经典' '/yueyu' https://allenpic.oss-cn-beijing.aliyuncs.com/%E9%BB%91%E5%8F%91.png %}  <br>{% galleryGroup '二次元' '二次元收录中心' '/dongman' https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c1915f220.jpg %}  <br>{% galleryGroup '科技' '主要是黑科技' '/heikeji' https://allenpic.oss-cn-beijing.aliyuncs.com/46132780_p0.png %}<br>{% galleryGroup '青春' '为了联盟！' '/wow' https://allenpic.oss-cn-beijing.aliyuncs.com/Sally%20Whitemane.png %}<br>&lt;/<span class="hljs-selector-tag">div</span>&gt;<br></code></pre></td></tr></tbody></table></figure><p>如下图：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img7.JPG" alt="视频组页面"></p><p>主页面搭好了，接下来就是各个分组的页面了，举其中一个例子来看：<br><code>/yueyu/index.md</code>里编辑：</p><figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">粤语经典</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-12-10 00:12:54</span><br><span class="hljs-attr">updated:</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">"yueyu"</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></tbody></table></figure><p>在里边写内容和编码，内容就是<code>markdown</code>语法，编码如下：</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;div style="position:relative; padding-bottom:75%; width:100%; height:0"&gt;  <br>    &lt;iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;amp;page=1&amp;high_quality=1" scrolling="no"   border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%;   width: 100%;"&gt;&lt;/iframe&gt;<br>&lt;/<span class="hljs-selector-tag">div</span>&gt;<br></code></pre></td></tr></tbody></table></figure><p><code>bilibili</code>默认给的是一个<code>iframe</code>，在<code>ifraame</code>中添加<code>css</code>样式：<code>style="position:absolute;height:100%;width:100%";</code><br>在原来的<code>iframe</code>外面嵌套一层<code>div</code>，然后添加样式：<code>style="position:relative;padding-bottom:75%"</code></p><blockquote><p>写法就是上面的代码，只需要把想要的视频的<code>bvid</code>更换一下就好，其中<code>high_quality=1</code>是选择可用的最高清晰度，实际上也不是<br>特别的高清，毕竟蓝光什么的还得是去人家小破站里去观看。</p></blockquote><p>原理：</p><ul><li><p>frame本身不可自动伸缩</p></li><li><p>iframe宽度和高度设置为100%后，会尽可能的填充满它的父级元素</p></li><li><p>所以在iframe外部嵌套一个div，只要这个div根据页面大小变化按比例变化，就可以实现了</p></li><li><p>iframe使用绝对位置(position: absolute), 默认与父级div的左上角对齐</p></li><li><p>div使用相对位置，并且用padding-bottom，来计算相对父元素的宽度（父元素宽度的75%作为div的高度），100:75则为4:3</p></li></ul><p>实际页面效果如下：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img8.JPG"></p><p>最后就简单了，把视频组放到主题配置文件的<code>menu</code>里，当然你也可以放在别的地方。</p><figure class="highlight yml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">menu:</span><br>    <span class="hljs-string">...</span><br>    <span class="hljs-string">视频:</span> <span class="hljs-string">/bilibili/</span> <span class="hljs-string">||</span> <span class="hljs-string">fas</span> <span class="hljs-string">fa-video</span><br>    <span class="hljs-string">...</span><br></code></pre></td></tr></tbody></table></figure><hr><p><strong>以上是我学着在自己博客里放一些喜欢的视频的学习笔记，从<a href="https://blog.csdn.net/weixin_41216356/article/details/106911233">SimZhou</a>、<a href="https://butterfly.js.org/">Jerry</a>大佬们那里学到了很多，感谢！！<br>做博客，乐趣就在于折腾，大家玩的开心啊！</strong></p>]]></content>
       
       
       <categories>
@@ -56,6 +56,17 @@
     
     
     <entry>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>偷得浮生半日闲</title>
       <link href="artitalk/index.html"/>
       <url>artitalk/index.html</url>
@@ -78,31 +89,9 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>收藏的视频</title>
-      <link href="bilibili/index.html"/>
-      <url>bilibili/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/%E9%BB%91%E5%8F%91.png">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c1915f220.jpg">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/46132780_p0.png">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/Sally%20Whitemane.png">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黑科技</title>
-      <link href="bkeji/index.html"/>
-      <url>bkeji/index.html</url>
+      <title>说说</title>
+      <link href="bb/index.html"/>
+      <url>bb/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -122,9 +111,9 @@
     
     
     <entry>
-      <title>说说</title>
-      <link href="bb/index.html"/>
-      <url>bb/index.html</url>
+      <title>黑科技</title>
+      <link href="bkeji/index.html"/>
+      <url>bkeji/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -133,22 +122,11 @@
     
     
     <entry>
-      <title>二次元里的妖精</title>
-      <link href="dongm/index.html"/>
-      <url>dongm/index.html</url>
+      <title>收藏的视频</title>
+      <link href="bilibili/index.html"/>
+      <url>bilibili/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友情链接</title>
-      <link href="friends/index.html"/>
-      <url>friends/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -166,11 +144,55 @@
     
     
     <entry>
+      <title>二次元里的妖精</title>
+      <link href="dongm/index.html"/>
+      <url>dongm/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>土狼必须死</title>
+      <link href="fate/index.html"/>
+      <url>fate/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="无限剑制"><a href="#无限剑制" class="headerlink" title="无限剑制"></a>无限剑制</h1><center> <font size="6" color="#dd0000"> Archer</font><p><code>体は剣baiで出来ている.</code> –此身为剑所成</p><p><code>血潮は鉄で 心は硝子.</code> –（血bai潮如铁 心如琉璃）du</p><p><code>几たびの戦场を越えて不败.</code>  –（纵横无数战场而不败）</p><p><code>ただ一度の败走もなく.</code> –（未尝一次败北）</p><p><code>ただ一度の胜利もなし.</code> –（亦未得一次胜利）</p><p><code>担い手ここに独り、剣の丘で鉄を锻つ.</code>–（旗手在此孤身一人，铸剑于剑丘之上）</p><p><code>ならば、我が生涯に意味は不要ず.</code> –（那么，此生无须任何意义）</p><p><code>この体は”无限の剣”で出来ていた</code> –（此身定为“无限之剑”所成）</p></center><p></p><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/7.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随手收集的素材</title>
+      <link href="fireshot/index.html"/>
+      <url>fireshot/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/404.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img7.JPG"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img8.JPG"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="friends/index.html"/>
+      <url>friends/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>鬼刀的小妹妹们</title>
       <link href="guidao/index.html"/>
       <url>guidao/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c18caa21a.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c1915f220.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc4578b58c20.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc4578d77880.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc45788790bd.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/122b337bfc6251dbaabb4d8c5b888d14.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362486154.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362503780.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362518489.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362526428.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362531172.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362539446.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362544931.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362549685.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362555703.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362560443.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362564445.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362569202.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362573730.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362578859.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362584466.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362595938.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362599895.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362604443.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362608904.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362613405.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362619479.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362624553.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362632403.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362636286.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362641513.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362646711.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362651058.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362654262.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362658856.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362663378.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362669529.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362689483.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362697783.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362706660.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362723097.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362729077.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362734493.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362749812.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362755824.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362759151.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362769346.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362772872.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362795235.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362800821.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362807985.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362819510.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362823660.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362827333.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362830505.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362838358.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/1607362845377.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/u=565013423,1878951614&amp;fm=26&amp;gp=0.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/u=1267566687,3989030659&amp;fm=26&amp;gp=0.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/u=2050943330,1291896844&amp;fm=26&amp;gp=0.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd8.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd9.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd10.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd11.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd12.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd13.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd14.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd15.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd16.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd17.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd18.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd19.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd20.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd21.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd22.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd23.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd24.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd25.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd26.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd27.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd28.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd29.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd30.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd31.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd32.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd33.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd34.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd35.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd36.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd37.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd38.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd39.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd40.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd41.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd42.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd43.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd44.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd45.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd46.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd47.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd48.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd49.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd51.png"></p>          </div>]]></content>
       
     </entry>
     
@@ -192,7 +214,18 @@
       <link href="marvel/index.html"/>
       <url>marvel/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/35660.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/167264.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/180123.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/207035.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/247938.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/254473.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/255000.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/256201.png"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/260421.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/333772fm.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/335807.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/353085.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/375286.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/384251.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/387418.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv14.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图册</title>
+      <link href="pics/index.html"/>
+      <url>pics/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="收集一些图片"><a href="#收集一些图片" class="headerlink" title="收集一些图片"></a>收集一些图片</h1><p>  <strong><em>漂亮的东西总是让人心情舒畅，如果一首好听的音乐，一杯好喝的白开水，一朵娇艳的花儿，一位绝色的人儿…</em></strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg">  <figcaption>  <div class="gallery-group-name">大图</div>  <p>可以放在top_img的</p>  <a href="/topimgs"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>關於漫威的圖片</p>  <a href="/marvel"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg">  <figcaption>  <div class="gallery-group-name">风景</div>  <p>适合放在文章封面的</p>  <a href="/scenery"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png">  <figcaption>  <div class="gallery-group-name">鬼刀</div>  <p>鬼刀启示录</p>  <a href="/guidao"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg">  <figcaption>  <div class="gallery-group-name">fate</div>  <p>土狼必须死</p>  <a href="/fate"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg">  <figcaption>  <div class="gallery-group-name">fireshot</div>  <p>一键三连</p>  <a href="/fireshot"></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -210,55 +243,11 @@
     
     
     <entry>
-      <title>千朵万朵压枝低</title>
-      <link href="scenery/index.html"/>
-      <url>scenery/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/2.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/3.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/4.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/5.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/6.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/7.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/8.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/9.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/10.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/11.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/12.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/13.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/14.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/15.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/16.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/17.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/19.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/20.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/21.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/22.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/23.jpg"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>图册</title>
-      <link href="pics/index.html"/>
-      <url>pics/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="收集一些图片"><a href="#收集一些图片" class="headerlink" title="收集一些图片"></a>收集一些图片</h1><p>  <strong><em>漂亮的东西总是让人心情舒畅，如果一首好听的音乐，一杯好喝的白开水，一朵娇艳的花儿，一位绝色的人儿…</em></strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/1.jpg">  <figcaption>  <div class="gallery-group-name">大图</div>  <p>可以放在top_img的</p>  <a href="/topimgs"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/248453top.jpg">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>關於漫威的圖片</p>  <a href="/marvel"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/13.jpg">  <figcaption>  <div class="gallery-group-name">风景</div>  <p>适合放在文章封面的</p>  <a href="/scenery"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://allenpic.oss-cn-beijing.aliyuncs.com/5bc2c18caa21a.jpg">  <figcaption>  <div class="gallery-group-name">鬼刀</div>  <p>鬼刀启示录</p>  <a href="/guidao"></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="self/duotone.css"/>
       <url>self/duotone.css</url>
       
         <content type="html"><![CDATA[/* 新添加的內容 *//* ------------------------------------- *//* 代碼框背景色和字體顔色 *//* 必須配置(把下面 pre[class*="language-"]的color和background複製到這裏來) */#article-container figure.highlight,#article-container pre[class*="language-"] {background: #faf8f5;color: #728fcb;}/* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個) */#article-container figure.highlight .highlight-tools {  color: xxxxx;  background: xxxxx}/* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */#article-container pre[class*='language-'].line-numbers .line-numbers-rows &gt; span:before {  color: xxxxxxx}/* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) *//* 不需要可以不用配置這個 */#article-container figure.highlight .caption,#article-container figure.highlight .caption a{  color: xxxxx !important}/* 代碼框滾動條 (需要可配置，默認為主題主顔色）*//* 不需要可以不用配置這個 */#article-container pre[class*='language-']::-webkit-scrollbar-thumb{  background: xxxx !important}/* ------------------------------------- *//* 這些可以刪除（可留着，如果有衝突，請刪除） *//* ------------------------------------- *//*code[class*="language-"],pre[class*="language-"] {font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;font-size: 14px;line-height: 1.375;direction: ltr;text-align: left;white-space: pre;word-spacing: normal;word-break: normal;-moz-tab-size: 4;-o-tab-size: 4;tab-size: 4;-webkit-hyphens: none;-moz-hyphens: none;-ms-hyphens: none;hyphens: none;background: #faf8f5;color: #728fcb;}pre &gt; code[class*="language-"] {font-size: 1em;}pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {text-shadow: none;background: #faf8f5;}pre[class*="language-"]::selection, pre[class*="language-"] ::selection,code[class*="language-"]::selection, code[class*="language-"] ::selection {text-shadow: none;background: #faf8f5;} *//* Code blocks pre[class*="language-"] {padding: 1em;margin: .5em 0;overflow: auto;} *//* Inline code  :not(pre) &gt; code[class*="language-"] {padding: .1em;border-radius: .3em;} /* ------------------------------------- *//* 到這里爲止，可以刪除 */.token.comment,.token.prolog,.token.doctype,.token.cdata {color: #b6ad9a;}.token.punctuation {color: #b6ad9a;}.token.namespace {opacity: .7;}.token.tag,.token.operator,.token.number {color: #063289;}.token.property,.token.function {color: #b29762;}.token.tag-id,.token.selector,.token.atrule-id {color: #2d2006;}code.language-javascript,.token.attr-name {color: #896724;}code.language-css,code.language-scss,.token.boolean,.token.string,.token.entity,.token.url,.language-css .token.string,.language-scss .token.string,.style .token.string,.token.attr-value,.token.keyword,.token.control,.token.directive,.token.unit,.token.statement,.token.regex,.token.atrule {color: #728fcb;}.token.placeholder,.token.variable {color: #93abdc;}.token.deleted {text-decoration: line-through;}.token.inserted {border-bottom: 1px dotted #2d2006;text-decoration: none;}.token.italic {font-style: italic;}.token.important,.token.bold {font-weight: bold;}.token.important {color: #896724;}.token.entity {cursor: help;}pre &gt; code.highlight {outline: .4em solid #896724;outline-offset: .4em;}/* overrides color-values for the Line Numbers plugin * http://prismjs.com/plugins/line-numbers/ */.line-numbers .line-numbers-rows {border-right-color: #ece8de;}.line-numbers-rows &gt; span:before {color: #cdc4b1;}/* overrides color-values for the Line Highlight plugin * http://prismjs.com/plugins/line-highlight/ */.line-highlight {background: rgba(45, 32, 6, 0.2);background: -webkit-linear-gradient(left, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));background: linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黄四娘家花满蹊</title>
-      <link href="topimgs/index.html"/>
-      <url>topimgs/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/0.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner2.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner3.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner4.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner5.jpg"><br><img src="https://allenpic.oss-cn-beijing.aliyuncs.com/banner6.jpg"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -276,11 +265,33 @@
     
     
     <entry>
-      <title>粤语经典</title>
-      <link href="yueyu/index.html"/>
-      <url>yueyu/index.html</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>千朵万朵压枝低</title>
+      <link href="scenery/index.html"/>
+      <url>scenery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>黄四娘家花满蹊</title>
+      <link href="topimgs/index.html"/>
+      <url>topimgs/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -291,7 +302,18 @@
       <link href="wow/index.html"/>
       <url>wow/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="魔兽世界各个版本剧情动画–史诗"><a href="#魔兽世界各个版本剧情动画–史诗" class="headerlink" title="魔兽世界各个版本剧情动画–史诗"></a>魔兽世界各个版本剧情动画–史诗</h1><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1as411o7xZ&amp;page=1-10&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>粤语经典</title>
+      <link href="yueyu/index.html"/>
+      <url>yueyu/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
       
     </entry>
     
