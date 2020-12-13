@@ -6,7 +6,7 @@
   <link href="https://guodxsmd.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodxsmd.github.io/"/>
-  <updated>2020-12-11T17:00:18.466Z</updated>
+  <updated>2020-12-12T17:53:12.187Z</updated>
   <id>https://guodxsmd.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>更换jsDelivr+github图床记录</title>
+    <link href="https://guodxsmd.github.io/2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/"/>
+    <id>https://guodxsmd.github.io/2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/</id>
+    <published>2020-12-12T14:37:01.000Z</published>
+    <updated>2020-12-12T17:53:12.187Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;jsDelivr-github免费调整图床使用记录&quot;&gt;&lt;a href=&quot;#jsDelivr-github免费调整图床使用记录&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://guodxsmd.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="jsDelivr" scheme="https://guodxsmd.github.io/tags/jsDelivr/"/>
+    
+    <category term="图床" scheme="https://guodxsmd.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>butterfly主题增加视频组</title>
     <link href="https://guodxsmd.github.io/2020/12/10/shi-pin-zu/"/>
     <id>https://guodxsmd.github.io/2020/12/10/shi-pin-zu/</id>
     <published>2020-12-10T01:30:44.000Z</published>
-    <updated>2020-12-11T17:00:18.466Z</updated>
+    <updated>2020-12-12T17:53:21.209Z</updated>
     
     
       
@@ -37,7 +64,9 @@
     <category term="学习" scheme="https://guodxsmd.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="butterfly,视频" scheme="https://guodxsmd.github.io/tags/butterfly-%E8%A7%86%E9%A2%91/"/>
+    <category term="butterfly" scheme="https://guodxsmd.github.io/tags/butterfly/"/>
+    
+    <category term="视频" scheme="https://guodxsmd.github.io/tags/%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   

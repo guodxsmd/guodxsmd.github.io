@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>更换jsDelivr+github图床记录</title>
+      <link href="2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/"/>
+      <url>2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="jsDelivr-github免费调整图床使用记录"><a href="#jsDelivr-github免费调整图床使用记录" class="headerlink" title="jsDelivr+github免费调整图床使用记录"></a>jsDelivr+github免费调整图床使用记录</h1><p>更换图床的背景：之前在用的是阿里家的<code>OSS</code>，本来挺好的，也觉得大平台的资源嘛，只要质量有保证<br>付点费也可以接受，直到有一天，提示欠费0.01元将要停止服务，这特么过分了,什么态度，果断放弃。</p><h2 id="新图床的选择"><a href="#新图床的选择" class="headerlink" title="新图床的选择"></a>新图床的选择</h2><p>早就听说过大名鼎鼎的<code>jsdelivr</code>，既然放弃了阿里<code>OSS</code>，就来搞一下<code>js+github</code>吧。<br>不知道人家<code>jsDelivr</code>为啥这么良心，提供这么好的CDN服务还不收费，而且你压根儿就不需要去他们那注册，连他们的网站都不需要登陆，直接加域名就可以免费快捷的帮着加速资源，服气！</p><h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><p>首先先去<code>github</code>创建一个库，专门放需要的图片们，其实不创建它也没有关系，只要路径指定正确，<code>jsDelivr</code>都可以找到需要的图片进行CDN加速，新建一个库主要是为了方便管理。</p><p>进入github个人主页，<code>new</code>新建一个仓库：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213005504.png" alt="点new新建"><br>新建仓库：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213005748.png"></p><p>点击左下<code>Creat repository</code>创建，至于<code>Description</code>描述可写可不写<br><em>今天搬家比较累，先写到这里吧，<code>to be to be continued...</code></em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> jsDelivr </tag>
+            
+            <tag> 图床 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>butterfly主题增加视频组</title>
       <link href="2020/12/10/shi-pin-zu/"/>
       <url>2020/12/10/shi-pin-zu/</url>
@@ -20,7 +47,9 @@
       
         <tags>
             
-            <tag> butterfly,视频 </tag>
+            <tag> butterfly </tag>
+            
+            <tag> 视频 </tag>
             
         </tags>
       
@@ -56,6 +85,17 @@
     
     
     <entry>
+      <title>偷得浮生半日闲</title>
+      <link href="artitalk/index.html"/>
+      <url>artitalk/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于我</title>
       <link href="about/index.html"/>
       <url>about/index.html</url>
@@ -67,11 +107,11 @@
     
     
     <entry>
-      <title>偷得浮生半日闲</title>
-      <link href="artitalk/index.html"/>
-      <url>artitalk/index.html</url>
+      <title>收藏的视频</title>
+      <link href="bilibili/index.html"/>
+      <url>bilibili/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -100,17 +140,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="categories/index.html"/>
-      <url>categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>黑科技</title>
       <link href="bkeji/index.html"/>
       <url>bkeji/index.html</url>
@@ -122,11 +151,22 @@
     
     
     <entry>
-      <title>收藏的视频</title>
-      <link href="bilibili/index.html"/>
-      <url>bilibili/index.html</url>
+      <title>分类</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>二次元里的妖精</title>
+      <link href="dongm/index.html"/>
+      <url>dongm/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
       
     </entry>
     
@@ -144,11 +184,11 @@
     
     
     <entry>
-      <title>二次元里的妖精</title>
-      <link href="dongm/index.html"/>
-      <url>dongm/index.html</url>
+      <title>友情链接</title>
+      <link href="friends/index.html"/>
+      <url>friends/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -171,17 +211,6 @@
       <url>fireshot/index.html</url>
       
         <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/404.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img7.JPG"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img8.JPG"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友情链接</title>
-      <link href="friends/index.html"/>
-      <url>friends/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -243,6 +272,28 @@
     
     
     <entry>
+      <title>千朵万朵压枝低</title>
+      <link href="scenery/index.html"/>
+      <url>scenery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="self/duotone.css"/>
       <url>self/duotone.css</url>
@@ -265,22 +316,11 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
+      <title>魔兽，我们的青春</title>
+      <link href="wow/index.html"/>
+      <url>wow/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>千朵万朵压枝低</title>
-      <link href="scenery/index.html"/>
-      <url>scenery/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<h1 id="魔兽世界各个版本剧情动画–史诗"><a href="#魔兽世界各个版本剧情动画–史诗" class="headerlink" title="魔兽世界各个版本剧情动画–史诗"></a>魔兽世界各个版本剧情动画–史诗</h1><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1as411o7xZ&amp;page=1-10&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
       
     </entry>
     
@@ -292,17 +332,6 @@
       <url>topimgs/index.html</url>
       
         <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>魔兽，我们的青春</title>
-      <link href="wow/index.html"/>
-      <url>wow/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="魔兽世界各个版本剧情动画–史诗"><a href="#魔兽世界各个版本剧情动画–史诗" class="headerlink" title="魔兽世界各个版本剧情动画–史诗"></a>魔兽世界各个版本剧情动画–史诗</h1><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1as411o7xZ&amp;page=1-10&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
       
     </entry>
     
