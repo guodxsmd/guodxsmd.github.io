@@ -3,12 +3,12 @@
 <meta property="og:url" content="https://guodxsmd.github.io/scenery/index.html">
 <meta property="og:site_name" content="军情七处">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg">
 <meta property="article:published_time" content="2020-12-05T14:13:53.000Z">
 <meta property="article:modified_time" content="2020-12-11T06:45:18.299Z">
 <meta property="article:author" content="Masterguo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://guodxsmd.github.io/scenery/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/favicon.png"><link rel="canonical" href="https://guodxsmd.github.io/scenery/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -33,12 +33,18 @@
     month: '个月前'
   },
   copyright: undefined,
-  ClickShowText: undefined,
   lightbox: 'fancybox',
   Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
   },
   isPhotoFigcaption: true,
   islazyload: false,
@@ -71,7 +77,22 @@ var saveToLocal = {
     }
     return item.value
   }
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
@@ -141,15 +162,15 @@ if (asideStatus !== undefined) {
    } else {
      document.documentElement.classList.remove('hide-aside')
    }
-}})()</script><style type="text/css">#toggle-sidebar {bottom: 80px}</style><meta name="referrer" content="no-referrer-when-downgrade" /><link rel="stylesheet" href="/self/Kimbiedark.css"><script src="/live2d-widget/autoload.js"></script><meta name="generator" content="Hexo 5.2.0">
+}})()</script><style type="text/css">#toggle-sidebar {bottom: 80px}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><script src="/live2d-widget/autoload.js"></script><script defer src="https://rmt.dogedoge.com/fetch/~/source/jsdelivr/npm/jquery@latest/dist/jquery.min.js"></script><script defer src="https://uuuuu.cf/js/fishes.js"></script><meta name="referrer" content="no-referrer-when-downgrade" /><link rel="stylesheet" href="/self/Kimbiedark.css"><meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="军情七处" type="application/atom+xml">
-</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-Sand-Clock"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/pics/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-jiazaishibaitidaiicon"></i><span> 哔哩</span></a></div><div class="menus_item"><a class="site-page" href="/bilibili/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="not-index-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">军情七处</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-Sand-Clock"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/pics/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-jiazaishibaitidaiicon"></i><span> 哔哩</span></a></div><div class="menus_item"><a class="site-page" href="/bilibili/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page-site-info"><h1 id="site-title">千朵万朵压枝低</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-Sand-Clock"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/pics/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-jiazaishibaitidaiicon"></i><span> 哔哩</span></a></div><div class="menus_item"><a class="site-page" href="/bilibili/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="not-index-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">军情七处</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-Sand-Clock"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/pics/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-jiazaishibaitidaiicon"></i><span> 哔哩</span></a></div><div class="menus_item"><a class="site-page" href="/bilibili/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">千朵万朵压枝低</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>
           </div>
-</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Twikoo</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="twikoo"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Masterguo</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/guodxsmd"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/guodxsmd" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostsnow8023@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.facebook.com/mstguo/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a><a class="social-icon" href="https://twitter.com/Masterguoboo" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">当你的眼睛眯着笑</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/" title="更换jsDelivr+github图床记录"><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更换jsDelivr+github图床记录"/></a><div class="content"><a class="title" href="/2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/" title="更换jsDelivr+github图床记录">更换jsDelivr+github图床记录</a><time datetime="2020-12-12T14:37:01.000Z" title="发表于 2020-12-12 22:37:01">2020-12-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/10/shi-pin-zu/" title="butterfly主题增加视频组"><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题增加视频组"/></a><div class="content"><a class="title" href="/2020/12/10/shi-pin-zu/" title="butterfly主题增加视频组">butterfly主题增加视频组</a><time datetime="2020-12-10T01:30:44.000Z" title="发表于 2020-12-10 09:30:44">2020-12-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/03/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd30.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2020/12/03/hello-world/" title="Hello World">Hello World</a><time datetime="2020-12-03T15:33:28.663Z" title="发表于 2020-12-03 23:33:28">2020-12-03</time></div></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="card-content"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Twikoo</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Masterguo</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/guodxsmd"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/guodxsmd" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostsnow8023@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.facebook.com/mstguo/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a><a class="social-icon" href="https://twitter.com/Masterguoboo" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">当你的眼睛眯着笑</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/" title="更换jsDelivr+github图床记录"><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更换jsDelivr+github图床记录"/></a><div class="content"><a class="title" href="/2020/12/12/geng-huan-jsdelivr-github-tu-chuang-ji-lu/" title="更换jsDelivr+github图床记录">更换jsDelivr+github图床记录</a><time datetime="2020-12-12T14:37:01.000Z" title="发表于 2020-12-12 22:37:01">2020-12-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/10/shi-pin-zu/" title="butterfly主题增加视频组"><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题增加视频组"/></a><div class="content"><a class="title" href="/2020/12/10/shi-pin-zu/" title="butterfly主题增加视频组">butterfly主题增加视频组</a><time datetime="2020-12-10T01:30:44.000Z" title="发表于 2020-12-10 09:30:44">2020-12-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/03/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2020/12/03/hello-world/" title="Hello World">Hello World</a><time datetime="2020-12-03T15:33:28.663Z" title="发表于 2020-12-03 23:33:28">2020-12-03</time></div></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="card-content"><div class="item-headline"><i class="fas fa-bolt"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">2</span></a></li>
             
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/jsDelivr/" style="font-size: 1.1em; color: rgb(175, 189, 145)">jsDelivr</a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 1.1em; color: rgb(35, 195, 104)">图床</a><a href="/tags/butterfly/" style="font-size: 1.1em; color: rgb(158, 191, 126)">butterfly</a><a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 1.1em; color: rgb(66, 5, 8)">视频</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-05-11T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">1.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-12-15T16:07:05.180Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Masterguo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">一点浩然气，千里<a target="_blank" rel="noopener" href="https://allengg.cn/">快哉风</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script>var preloader = {
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/jsDelivr/" style="font-size: 1.1em; color: rgb(108, 12, 123)">jsDelivr</a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 1.1em; color: rgb(96, 104, 80)">图床</a><a href="/tags/butterfly/" style="font-size: 1.1em; color: rgb(161, 3, 61)">butterfly</a><a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 1.1em; color: rgb(104, 101, 185)">视频</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-05-11T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">1.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-12-15T17:48:47.477Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 By Masterguo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">一点浩然气，千里<a target="_blank" rel="noopener" href="https://allengg.cn/">快哉风</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
@@ -192,38 +213,58 @@ window.addEventListener('load',()=> {preloader.endLoading()})</script><div class
   }
 
   if (typeof Valine === 'function') initValine() 
-  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
 }
 
 if ('Valine' === 'Valine' || !false) {
   if (false) btf.loadComment(document.querySelector('#vcomment'),loadValine)
-  else setTimeout(() => loadValine(), 0)
+  else setTimeout(loadValine, 0)
 } else {
   function loadOtherComment () {
     loadValine()
   }
-}</script><script>function loadTwikoo () {
-  function init () {
-    twikoo.init({ 
-      envId: 'allengg-2gpanvnra711aa19' 
+}</script><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init({
+      envId: 'allengg-2gpanvnra711aa19',
+      el: '#twikoo-wrap'
     })
   }
 
-  if (typeof twikoo.init === 'function') {
-    init()
-  } else {
-    $.getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js', init)
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'allengg-2gpanvnra711aa19',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
   }
-}
 
-if ('Valine' === 'Twikoo' || !false) {
-  if (false) btf.loadComment(document.getElementById('twikoo'), loadTwikoo)
-  else loadTwikoo()
-} else {
-  function loadOtherComment () {
-    loadTwikoo()
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
   }
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="1544998613" data-server="tencent" data-type="playlist" data-lrctype=3 data-fixed="true" data-mini="true" data-listFolded="true" data-order="random" data-preload="auto" data-theme="#2980b9" data-autoplay="true" muted></div><link rel="stylesheet" href="/css/allengg.css"><script data-pjax src="/js/allen.js"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+
+  if ('Valine' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="1544998613" data-server="tencent" data-type="playlist" data-lrctype=3 data-fixed="true" data-mini="true" data-listFolded="true" data-order="random" data-preload="auto" data-theme="#2980b9" data-autoplay="true" muted></div><link rel="stylesheet" href="/css/allengg.css"><script data-pjax src="/js/allen.js"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
@@ -246,7 +287,7 @@ var chatBtnFn = () => {
   });
 }
 chatBtnFn()
-</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
   'title',
   '#config_change',
   '#body-wrap',
@@ -270,8 +311,12 @@ var pjax = new Pjax({
 document.addEventListener('pjax:complete', function () {
   window.refreshFn()
 
-  $('script[data-pjax]').each(function () {
-    $(this).parent().append($(this).remove())
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
   })
 
   GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
@@ -310,9 +355,8 @@ document.addEventListener('pjax:send', function () {
 
   typeof typed === 'object' && typed.destroy()
 
-  $(window).off('scroll')
-
   //reset readmode
-  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
 
 })</script></div></body></html>
