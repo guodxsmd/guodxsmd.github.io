@@ -6,7 +6,7 @@
   <link href="https://guodxsmd.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodxsmd.github.io/"/>
-  <updated>2020-12-14T01:44:22.911Z</updated>
+  <updated>2020-12-16T16:09:08.235Z</updated>
   <id>https://guodxsmd.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>butterfly主题增加可互动的看板娘</title>
+    <link href="https://guodxsmd.github.io/2020/12/16/butterfly-zhu-ti-zeng-jia-ke-hu-dong-de-kan-ban-niang/"/>
+    <id>https://guodxsmd.github.io/2020/12/16/butterfly-zhu-ti-zeng-jia-ke-hu-dong-de-kan-ban-niang/</id>
+    <published>2020-12-16T14:43:07.000Z</published>
+    <updated>2020-12-16T16:09:08.235Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Butterfly主题添加会换装会互动的看板娘&quot;&gt;&lt;a href=&quot;#Butterfly主题添加会换装会互动的看板娘&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="学习" scheme="https://guodxsmd.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="butterfly" scheme="https://guodxsmd.github.io/tags/butterfly/"/>
+    
+    <category term="看板娘" scheme="https://guodxsmd.github.io/tags/%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    
+  </entry>
   
   <entry>
     <title>更换jsDelivr+github图床记录</title>
@@ -75,7 +102,7 @@
     <link href="https://guodxsmd.github.io/2020/12/03/hello-world/"/>
     <id>https://guodxsmd.github.io/2020/12/03/hello-world/</id>
     <published>2020-12-03T15:33:28.663Z</published>
-    <updated>2020-12-03T15:33:28.663Z</updated>
+    <updated>2020-12-16T11:07:45.233Z</updated>
     
     
       
