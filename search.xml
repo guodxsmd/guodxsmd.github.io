@@ -128,9 +128,9 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
+      <title>404</title>
+      <link href="404/index.html"/>
+      <url>404/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -139,9 +139,9 @@
     
     
     <entry>
-      <title>404</title>
-      <link href="404/index.html"/>
-      <url>404/index.html</url>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -161,9 +161,9 @@
     
     
     <entry>
-      <title>小破站看剧列表</title>
-      <link href="bangumis/index.html"/>
-      <url>bangumis/index.html</url>
+      <title>说说</title>
+      <link href="bb/index.html"/>
+      <url>bb/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -172,9 +172,9 @@
     
     
     <entry>
-      <title>说说</title>
-      <link href="bb/index.html"/>
-      <url>bb/index.html</url>
+      <title>小破站看剧列表</title>
+      <link href="bangumis/index.html"/>
+      <url>bangumis/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -194,9 +194,9 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="contact/index.html"/>
-      <url>contact/index.html</url>
+      <title>分类</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -227,9 +227,20 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="categories/index.html"/>
-      <url>categories/index.html</url>
+      <title></title>
+      <link href="css/title.css"/>
+      <url>css/title.css</url>
+      
+        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>留言板</title>
+      <link href="contact/index.html"/>
+      <url>contact/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -243,17 +254,6 @@
       <url>dongm/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="css/title.css"/>
-      <url>css/title.css</url>
-      
-        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
       
     </entry>
     
@@ -304,33 +304,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="js/ripples.js"/>
-      <url>js/ripples.js</url>
-      
-        <content type="html"><![CDATA[$(document).ready(function () {    try {      $("#page-header").ripples({        resolution: 512,        dropRadius: 10, //px        perturbance: 0.04,      });    } catch (e) {      $(".error").show().text(e);    }  });]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>友情链接</title>
       <link href="link/index.html"/>
       <url>link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>漫威群英传</title>
-      <link href="marvel/index.html"/>
-      <url>marvel/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv14.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -348,11 +326,11 @@
     
     
     <entry>
-      <title>千朵万朵压枝低</title>
-      <link href="scenery/index.html"/>
-      <url>scenery/index.html</url>
+      <title></title>
+      <link href="js/ripples.js"/>
+      <url>js/ripples.js</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[$(document).ready(function () {    try {      $("#page-header").ripples({        resolution: 512,        dropRadius: 10, //px        perturbance: 0.04,      });    } catch (e) {      $(".error").show().text(e);    }  });]]></content>
       
     </entry>
     
@@ -364,6 +342,28 @@
       <url>pics/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="收集一些图片"><a href="#收集一些图片" class="headerlink" title="收集一些图片"></a>收集一些图片</h1><p>  <strong><em>漂亮的东西总是让人心情舒畅，如果一首好听的音乐，一杯好喝的白开水，一朵娇艳的花儿，一位绝色的人儿…</em></strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">大图</div>  <p>可以放在top_img的</p>  <a href="/topimgs"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">漫威</div>  <p>關於漫威的圖片</p>  <a href="/marvel"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">风景</div>  <p>适合放在文章封面的</p>  <a href="/scenery"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">鬼刀</div>  <p>鬼刀启示录</p>  <a href="/guidao"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">fate</div>  <p>土狼必须死</p>  <a href="/fate"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">fireshot</div>  <p>一键三连</p>  <a href="/fireshot"></a>  </figcaption>  </figure>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>漫威群英传</title>
+      <link href="marvel/index.html"/>
+      <url>marvel/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv14.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>千朵万朵压枝低</title>
+      <link href="scenery/index.html"/>
+      <url>scenery/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -403,6 +403,17 @@
     
     
     <entry>
+      <title>黄四娘家花满蹊</title>
+      <link href="topimgs/index.html"/>
+      <url>topimgs/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>魔兽，我们的青春</title>
       <link href="wow/index.html"/>
       <url>wow/index.html</url>
@@ -419,17 +430,6 @@
       <url>yueyu/index.html</url>
       
         <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黄四娘家花满蹊</title>
-      <link href="topimgs/index.html"/>
-      <url>topimgs/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
       
     </entry>
     
