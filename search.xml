@@ -116,7 +116,7 @@
       <link href="hello-world.html"/>
       <url>hello-world.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p><div id="weather-v2-plugin-simple"></div><script>WIDGET = {  CONFIG: {    "modules": "01234",    "background": 1,    "tmpColor": "FFFFFF",    "tmpSize": 16,    "cityColor": "FFFFFF",    "citySize": 16,    "aqiSize": 16,    "weatherIconSize": 24,    "alertIconSize": 18,    "padding": "10px 10px 10px 10px",    "shadow": "1",    "language": "auto",    "borderRadius": 5,    "fixed": "false",    "vertical": "middle",    "horizontal": "center",    "key": "nG2XlmAkp1"  }}</script><script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>]]></content>
       
       
       
@@ -150,11 +150,11 @@
     
     
     <entry>
-      <title>收藏的视频</title>
-      <link href="bilibili/index.html"/>
-      <url>bilibili/index.html</url>
+      <title>偷得浮生半日闲</title>
+      <link href="artitalk/index.html"/>
+      <url>artitalk/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -172,9 +172,9 @@
     
     
     <entry>
-      <title>偷得浮生半日闲</title>
-      <link href="artitalk/index.html"/>
-      <url>artitalk/index.html</url>
+      <title>小破站看剧列表</title>
+      <link href="bangumis/index.html"/>
+      <url>bangumis/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -183,11 +183,22 @@
     
     
     <entry>
-      <title>小破站看剧列表</title>
-      <link href="bangumis/index.html"/>
-      <url>bangumis/index.html</url>
+      <title>黑科技</title>
+      <link href="bkeji/index.html"/>
+      <url>bkeji/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>收藏的视频</title>
+      <link href="bilibili/index.html"/>
+      <url>bilibili/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
       
     </entry>
     
@@ -216,28 +227,6 @@
     
     
     <entry>
-      <title>二次元里的妖精</title>
-      <link href="dongm/index.html"/>
-      <url>dongm/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黑科技</title>
-      <link href="bkeji/index.html"/>
-      <url>bkeji/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="css/aplayer.css"/>
       <url>css/aplayer.css</url>
@@ -249,22 +238,33 @@
     
     
     <entry>
-      <title>土狼必须死</title>
-      <link href="fate/index.html"/>
-      <url>fate/index.html</url>
+      <title></title>
+      <link href="css/title.css"/>
+      <url>css/title.css</url>
       
-        <content type="html"><![CDATA[<h1 id="无限剑制"><a href="#无限剑制" class="headerlink" title="无限剑制"></a>无限剑制</h1><center> <font size="6" color="#dd0000"> Archer</font><p><code>体は剣baiで出来ている.</code> –此身为剑所成</p><p><code>血潮は鉄で 心は硝子.</code> –（血bai潮如铁 心如琉璃）du</p><p><code>几たびの戦场を越えて不败.</code>  –（纵横无数战场而不败）</p><p><code>ただ一度の败走もなく.</code> –（未尝一次败北）</p><p><code>ただ一度の胜利もなし.</code> –（亦未得一次胜利）</p><p><code>担い手ここに独り、剣の丘で鉄を锻つ.</code>–（旗手在此孤身一人，铸剑于剑丘之上）</p><p><code>ならば、我が生涯に意味は不要ず.</code> –（那么，此生无须任何意义）</p><p><code>この体は”无限の剣”で出来ていた</code> –（此身定为“无限之剑”所成）</p></center><p></p><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/7.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="css/title.css"/>
-      <url>css/title.css</url>
+      <title>二次元里的妖精</title>
+      <link href="dongm/index.html"/>
+      <url>dongm/index.html</url>
       
-        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
+        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>土狼必须死</title>
+      <link href="fate/index.html"/>
+      <url>fate/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="无限剑制"><a href="#无限剑制" class="headerlink" title="无限剑制"></a>无限剑制</h1><center> <font size="6" color="#dd0000"> Archer</font><p><code>体は剣baiで出来ている.</code> –此身为剑所成</p><p><code>血潮は鉄で 心は硝子.</code> –（血bai潮如铁 心如琉璃）du</p><p><code>几たびの戦场を越えて不败.</code>  –（纵横无数战场而不败）</p><p><code>ただ一度の败走もなく.</code> –（未尝一次败北）</p><p><code>ただ一度の胜利もなし.</code> –（亦未得一次胜利）</p><p><code>担い手ここに独り、剣の丘で鉄を锻つ.</code>–（旗手在此孤身一人，铸剑于剑丘之上）</p><p><code>ならば、我が生涯に意味は不要ず.</code> –（那么，此生无须任何意义）</p><p><code>この体は”无限の剣”で出来ていた</code> –（此身定为“无限之剑”所成）</p></center><p></p><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/7.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -370,11 +370,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="self/kimbiedark.css"/>
-      <url>self/kimbiedark.css</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
-        <content type="html"><![CDATA[/*    Name:     Kimbie (dark)    Author:   Jan T. Sott    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License    URL:      https://github.com/idleberg/Kimbie-highlight.js*//* 新添加的內容 *//* ------------------------------------- *//* 代碼框背景色和字體顔色,與hljs一樣就行 *//* 必須配置(把下面.hljs的color和background複製到這裏來) */#article-container pre, #article-container figure.highlight {  background: #221a0f;    color: #d3af86}/* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個 */#article-container figure.highlight .highlight-tools {  color: #fff;  background: #321a0f}/* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */#article-container figure.highlight .gutter pre {  background-color: #221a0f;  color: #fff}/* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) *//* 不需要可以不用配置這個 */#article-container figure.highlight figcaption,#article-container figure.highlight figcaption a {  color: #d3af86 !important}/* 代碼框滾動條 (需要可配置，默認為主題主顔色）*//* 不需要可以不用配置這個 */#article-container figure.highlight table::-webkit-scrollbar-thumb {  background: #d3af86 !important}/* ------------------------------------- *//* Kimbie Comment */.hljs-comment,.hljs-quote {  color: #d6baad;}/* Kimbie Red */.hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-meta {  color: #dc3958;}/* Kimbie Orange */.hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-deletion,.hljs-link {  color: #f79a32;}/* Kimbie Yellow */.hljs-title,.hljs-section,.hljs-attribute {  color: #f06431;}/* Kimbie Green */.hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition {  color: #889b4a;}/* Kimbie Purple */.hljs-keyword,.hljs-selector-tag,.hljs-function {  color: #98676a;}/* 更改的內容 把.hljs改為 #article-container figure.highlight .hljs *、/* ------------------------------------- */#article-container figure.highlight .hljs {  display: block;  overflow-x: auto;  background: #221a0f;  color: #d3af86;  padding: 0.5em;}.hljs-emphasis {  font-style: italic;}.hljs-strong {  font-weight: bold;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -392,22 +392,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
+      <title></title>
+      <link href="self/kimbiedark.css"/>
+      <url>self/kimbiedark.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/*    Name:     Kimbie (dark)    Author:   Jan T. Sott    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License    URL:      https://github.com/idleberg/Kimbie-highlight.js*//* 新添加的內容 *//* ------------------------------------- *//* 代碼框背景色和字體顔色,與hljs一樣就行 *//* 必須配置(把下面.hljs的color和background複製到這裏來) */#article-container pre, #article-container figure.highlight {  background: #221a0f;    color: #d3af86}/* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個 */#article-container figure.highlight .highlight-tools {  color: #fff;  background: #321a0f}/* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */#article-container figure.highlight .gutter pre {  background-color: #221a0f;  color: #fff}/* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) *//* 不需要可以不用配置這個 */#article-container figure.highlight figcaption,#article-container figure.highlight figcaption a {  color: #d3af86 !important}/* 代碼框滾動條 (需要可配置，默認為主題主顔色）*//* 不需要可以不用配置這個 */#article-container figure.highlight table::-webkit-scrollbar-thumb {  background: #d3af86 !important}/* ------------------------------------- *//* Kimbie Comment */.hljs-comment,.hljs-quote {  color: #d6baad;}/* Kimbie Red */.hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-meta {  color: #dc3958;}/* Kimbie Orange */.hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-deletion,.hljs-link {  color: #f79a32;}/* Kimbie Yellow */.hljs-title,.hljs-section,.hljs-attribute {  color: #f06431;}/* Kimbie Green */.hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition {  color: #889b4a;}/* Kimbie Purple */.hljs-keyword,.hljs-selector-tag,.hljs-function {  color: #98676a;}/* 更改的內容 把.hljs改為 #article-container figure.highlight .hljs *、/* ------------------------------------- */#article-container figure.highlight .hljs {  display: block;  overflow-x: auto;  background: #221a0f;  color: #d3af86;  padding: 0.5em;}.hljs-emphasis {  font-style: italic;}.hljs-strong {  font-weight: bold;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>黄四娘家花满蹊</title>
-      <link href="topimgs/index.html"/>
-      <url>topimgs/index.html</url>
+      <title>粤语经典</title>
+      <link href="yueyu/index.html"/>
+      <url>yueyu/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
       
     </entry>
     
@@ -425,11 +425,11 @@
     
     
     <entry>
-      <title>粤语经典</title>
-      <link href="yueyu/index.html"/>
-      <url>yueyu/index.html</url>
+      <title>黄四娘家花满蹊</title>
+      <link href="topimgs/index.html"/>
+      <url>topimgs/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
       
     </entry>
     
