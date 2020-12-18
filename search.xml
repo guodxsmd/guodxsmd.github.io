@@ -150,28 +150,6 @@
     
     
     <entry>
-      <title>偷得浮生半日闲</title>
-      <link href="artitalk/index.html"/>
-      <url>artitalk/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小破站看剧列表</title>
-      <link href="bangumis/index.html"/>
-      <url>bangumis/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>收藏的视频</title>
       <link href="bilibili/index.html"/>
       <url>bilibili/index.html</url>
@@ -194,9 +172,9 @@
     
     
     <entry>
-      <title>黑科技</title>
-      <link href="bkeji/index.html"/>
-      <url>bkeji/index.html</url>
+      <title>偷得浮生半日闲</title>
+      <link href="artitalk/index.html"/>
+      <url>artitalk/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -205,9 +183,9 @@
     
     
     <entry>
-      <title>留言板</title>
-      <link href="contact/index.html"/>
-      <url>contact/index.html</url>
+      <title>小破站看剧列表</title>
+      <link href="bangumis/index.html"/>
+      <url>bangumis/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -227,22 +205,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="css/aplayer.css"/>
-      <url>css/aplayer.css</url>
+      <title>留言板</title>
+      <link href="contact/index.html"/>
+      <url>contact/index.html</url>
       
-        <content type="html"><![CDATA[.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }  ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="css/title.css"/>
-      <url>css/title.css</url>
-      
-        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -260,11 +227,22 @@
     
     
     <entry>
-      <title>随手收集的素材</title>
-      <link href="fireshot/index.html"/>
-      <url>fireshot/index.html</url>
+      <title>黑科技</title>
+      <link href="bkeji/index.html"/>
+      <url>bkeji/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/404.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img7.JPG"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img8.JPG"></p>          </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="css/aplayer.css"/>
+      <url>css/aplayer.css</url>
+      
+        <content type="html"><![CDATA[.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }  ]]></content>
       
     </entry>
     
@@ -282,11 +260,22 @@
     
     
     <entry>
-      <title>鬼刀的小妹妹们</title>
-      <link href="guidao/index.html"/>
-      <url>guidao/index.html</url>
+      <title></title>
+      <link href="css/title.css"/>
+      <url>css/title.css</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd8.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd9.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd10.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd11.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd12.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd13.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd14.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd15.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd16.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd17.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd18.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd19.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd20.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd21.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd22.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd23.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd24.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd25.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd26.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd27.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd28.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd29.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd30.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd31.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd32.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd33.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd34.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd35.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd36.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd37.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd38.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd39.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd40.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd41.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd42.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd43.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd44.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd45.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd46.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd47.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd48.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd49.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd51.png"></p>          </div>]]></content>
+        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随手收集的素材</title>
+      <link href="fireshot/index.html"/>
+      <url>fireshot/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/404.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img7.JPG"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img8.JPG"></p>          </div>]]></content>
       
     </entry>
     
@@ -304,11 +293,33 @@
     
     
     <entry>
+      <title>鬼刀的小妹妹们</title>
+      <link href="guidao/index.html"/>
+      <url>guidao/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd8.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd9.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd10.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd11.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd12.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd13.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd14.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd15.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd16.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd17.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd18.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd19.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd20.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd21.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd22.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd23.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd24.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd25.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd26.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd27.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd28.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd29.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd30.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd31.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd32.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd33.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd34.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd35.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd36.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd37.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd38.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd39.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd40.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd41.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd42.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd43.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd44.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd45.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd46.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd47.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd48.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd49.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd51.png"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="js/ripples.js"/>
       <url>js/ripples.js</url>
       
         <content type="html"><![CDATA[$(document).ready(function () {    try {      $("#page-header").ripples({        resolution: 512,        dropRadius: 10, //px        perturbance: 0.04,      });    } catch (e) {      $(".error").show().text(e);    }  });]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="link/index.html"/>
+      <url>link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -337,28 +348,6 @@
     
     
     <entry>
-      <title>千朵万朵压枝低</title>
-      <link href="scenery/index.html"/>
-      <url>scenery/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友情链接</title>
-      <link href="link/index.html"/>
-      <url>link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>图册</title>
       <link href="pics/index.html"/>
       <url>pics/index.html</url>
@@ -370,11 +359,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
+      <title>千朵万朵压枝低</title>
+      <link href="scenery/index.html"/>
+      <url>scenery/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="self/kimbiedark.css"/>
+      <url>self/kimbiedark.css</url>
+      
+        <content type="html"><![CDATA[/*    Name:     Kimbie (dark)    Author:   Jan T. Sott    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License    URL:      https://github.com/idleberg/Kimbie-highlight.js*//* 新添加的內容 *//* ------------------------------------- *//* 代碼框背景色和字體顔色,與hljs一樣就行 *//* 必須配置(把下面.hljs的color和background複製到這裏來) */#article-container pre, #article-container figure.highlight {  background: #221a0f;    color: #d3af86}/* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個 */#article-container figure.highlight .highlight-tools {  color: #fff;  background: #321a0f}/* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */#article-container figure.highlight .gutter pre {  background-color: #221a0f;  color: #fff}/* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) *//* 不需要可以不用配置這個 */#article-container figure.highlight figcaption,#article-container figure.highlight figcaption a {  color: #d3af86 !important}/* 代碼框滾動條 (需要可配置，默認為主題主顔色）*//* 不需要可以不用配置這個 */#article-container figure.highlight table::-webkit-scrollbar-thumb {  background: #d3af86 !important}/* ------------------------------------- *//* Kimbie Comment */.hljs-comment,.hljs-quote {  color: #d6baad;}/* Kimbie Red */.hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-meta {  color: #dc3958;}/* Kimbie Orange */.hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-deletion,.hljs-link {  color: #f79a32;}/* Kimbie Yellow */.hljs-title,.hljs-section,.hljs-attribute {  color: #f06431;}/* Kimbie Green */.hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition {  color: #889b4a;}/* Kimbie Purple */.hljs-keyword,.hljs-selector-tag,.hljs-function {  color: #98676a;}/* 更改的內容 把.hljs改為 #article-container figure.highlight .hljs *、/* ------------------------------------- */#article-container figure.highlight .hljs {  display: block;  overflow-x: auto;  background: #221a0f;  color: #d3af86;  padding: 0.5em;}.hljs-emphasis {  font-style: italic;}.hljs-strong {  font-weight: bold;}]]></content>
       
     </entry>
     
@@ -392,11 +392,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="self/kimbiedark.css"/>
-      <url>self/kimbiedark.css</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
-        <content type="html"><![CDATA[/*    Name:     Kimbie (dark)    Author:   Jan T. Sott    License:  Creative Commons Attribution-ShareAlike 4.0 Unported License    URL:      https://github.com/idleberg/Kimbie-highlight.js*//* 新添加的內容 *//* ------------------------------------- *//* 代碼框背景色和字體顔色,與hljs一樣就行 *//* 必須配置(把下面.hljs的color和background複製到這裏來) */#article-container pre, #article-container figure.highlight {  background: #221a0f;    color: #d3af86}/* 代碼框工具欄 (如果你關掉了copy、lang和shrink,可不用配置這個 */#article-container figure.highlight .highlight-tools {  color: #fff;  background: #321a0f}/* 代碼框行數(如果已經關掉line_number,可以不用配置這個) */#article-container figure.highlight .gutter pre {  background-color: #221a0f;  color: #fff}/* 代碼塊figcaption配置(hexo自帶標簽https://hexo.io/zh-tw/docs/tag-plugins.html#Code-Block) *//* 不需要可以不用配置這個 */#article-container figure.highlight figcaption,#article-container figure.highlight figcaption a {  color: #d3af86 !important}/* 代碼框滾動條 (需要可配置，默認為主題主顔色）*//* 不需要可以不用配置這個 */#article-container figure.highlight table::-webkit-scrollbar-thumb {  background: #d3af86 !important}/* ------------------------------------- *//* Kimbie Comment */.hljs-comment,.hljs-quote {  color: #d6baad;}/* Kimbie Red */.hljs-variable,.hljs-template-variable,.hljs-tag,.hljs-name,.hljs-selector-id,.hljs-selector-class,.hljs-regexp,.hljs-meta {  color: #dc3958;}/* Kimbie Orange */.hljs-number,.hljs-built_in,.hljs-builtin-name,.hljs-literal,.hljs-type,.hljs-params,.hljs-deletion,.hljs-link {  color: #f79a32;}/* Kimbie Yellow */.hljs-title,.hljs-section,.hljs-attribute {  color: #f06431;}/* Kimbie Green */.hljs-string,.hljs-symbol,.hljs-bullet,.hljs-addition {  color: #889b4a;}/* Kimbie Purple */.hljs-keyword,.hljs-selector-tag,.hljs-function {  color: #98676a;}/* 更改的內容 把.hljs改為 #article-container figure.highlight .hljs *、/* ------------------------------------- */#article-container figure.highlight .hljs {  display: block;  overflow-x: auto;  background: #221a0f;  color: #d3af86;  padding: 0.5em;}.hljs-emphasis {  font-style: italic;}.hljs-strong {  font-weight: bold;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
