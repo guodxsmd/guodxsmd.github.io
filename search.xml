@@ -128,9 +128,9 @@
     
     
     <entry>
-      <title>404</title>
-      <link href="404/index.html"/>
-      <url>404/index.html</url>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -139,20 +139,9 @@
     
     
     <entry>
-      <title>收藏的视频</title>
-      <link href="bilibili/index.html"/>
-      <url>bilibili/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于我</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
+      <title>404</title>
+      <link href="404/index.html"/>
+      <url>404/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -183,6 +172,28 @@
     
     
     <entry>
+      <title>说说</title>
+      <link href="bb/index.html"/>
+      <url>bb/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>收藏的视频</title>
+      <link href="bilibili/index.html"/>
+      <url>bilibili/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="收藏的一些视频"><a href="#收藏的一些视频" class="headerlink" title="收藏的一些视频"></a>收藏的一些视频</h1><p>  <strong>* 闲来无事看一看，挺好的 *</strong></p><hr><div class="gallery-group-main">  <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">粤语</div>  <p>粤语经典</p>  <a href="/yueyu"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">二次元</div>  <p>二次元收录中心</p>  <a href="/dongm"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">科技</div>  <p>主要是黑科技</p>  <a href="/bkeji"></a>  </figcaption>  </figure>    <figure class="gallery-group">  <img class="gallery-group-img" src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/wow01.png" alt="Group Image Gallery">  <figcaption>  <div class="gallery-group-name">青春</div>  <p>为了联盟！</p>  <a href="/wow"></a>  </figcaption>  </figure>  </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>黑科技</title>
       <link href="bkeji/index.html"/>
       <url>bkeji/index.html</url>
@@ -205,17 +216,6 @@
     
     
     <entry>
-      <title>说说</title>
-      <link href="bb/index.html"/>
-      <url>bb/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>留言板</title>
       <link href="contact/index.html"/>
       <url>contact/index.html</url>
@@ -227,11 +227,11 @@
     
     
     <entry>
-      <title>二次元里的妖精</title>
-      <link href="dongm/index.html"/>
-      <url>dongm/index.html</url>
+      <title></title>
+      <link href="css/title.css"/>
+      <url>css/title.css</url>
       
-        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
       
     </entry>
     
@@ -249,11 +249,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="css/title.css"/>
-      <url>css/title.css</url>
+      <title>二次元里的妖精</title>
+      <link href="dongm/index.html"/>
+      <url>dongm/index.html</url>
       
-        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
+        <content type="html"><![CDATA[<h1 id="二次元里的妖精们来了"><a href="#二次元里的妖精们来了" class="headerlink" title="二次元里的妖精们来了"></a>二次元里的妖精们来了</h1><hr><h2 id="雪菲岚岚改编–《下山》"><a href="#雪菲岚岚改编–《下山》" class="headerlink" title="雪菲岚岚改编–《下山》"></a>雪菲岚岚改编–《下山》</h2><p>  <code>刺客伍六七</code></p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV19J411W7Xu&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div><h2 id="BAD-APPLE"><a href="#BAD-APPLE" class="headerlink" title="BAD APPLE"></a>BAD APPLE</h2><p>这个不用介绍了，高清版请点清晰度前往无敌的小破站欣赏！</p><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1NK4y1t7M9&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>友情链接</title>
+      <link href="friends/index.html"/>
+      <url>friends/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -276,17 +287,6 @@
       <url>fireshot/index.html</url>
       
         <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/404.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img7.JPG"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/img8.JPG"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友情链接</title>
-      <link href="friends/index.html"/>
-      <url>friends/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -370,17 +370,6 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="tags/index.html"/>
-      <url>tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="self/duotone.css"/>
       <url>self/duotone.css</url>
@@ -403,22 +392,22 @@
     
     
     <entry>
-      <title>黄四娘家花满蹊</title>
-      <link href="topimgs/index.html"/>
-      <url>topimgs/index.html</url>
+      <title>标签</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>粤语经典</title>
-      <link href="yueyu/index.html"/>
-      <url>yueyu/index.html</url>
+      <title>黄四娘家花满蹊</title>
+      <link href="topimgs/index.html"/>
+      <url>topimgs/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/banner/6.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -441,6 +430,17 @@
       <url>xmyrz/index.html</url>
       
         <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img1.png"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>粤语经典</title>
+      <link href="yueyu/index.html"/>
+      <url>yueyu/index.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><div style="position:relative; padding-bottom:75%; width:100%; height:0">    <iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe></div>]]></content>
       
     </entry>
     
