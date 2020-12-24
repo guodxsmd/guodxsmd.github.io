@@ -128,9 +128,9 @@
     
     
     <entry>
-      <title>404</title>
-      <link href="404/index.html"/>
-      <url>404/index.html</url>
+      <title>关于我</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -150,9 +150,20 @@
     
     
     <entry>
-      <title>关于我</title>
-      <link href="about/index.html"/>
-      <url>about/index.html</url>
+      <title>说说</title>
+      <link href="bb/index.html"/>
+      <url>bb/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>404</title>
+      <link href="404/index.html"/>
+      <url>404/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -172,11 +183,11 @@
     
     
     <entry>
-      <title>说说</title>
-      <link href="bb/index.html"/>
-      <url>bb/index.html</url>
+      <title>黑科技</title>
+      <link href="bkeji/index.html"/>
+      <url>bkeji/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="决战聚贤庄-–UP主：Super也好君"><a href="#决战聚贤庄-–UP主：Super也好君" class="headerlink" title="决战聚贤庄 –UP主：Super也好君"></a>决战聚贤庄 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-fOdcbDHa" src="//player.bilibili.com/player.html?bvid=BV1py4y1q79G&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-fOdcbDHa").style.height=document.getElementById("mmedia-fOdcbDHa").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-fOdcbDHa").style.height=document.getElementById("mmedia-fOdcbDHa").scrollWidth*0.76+"px";            };        </script>          <h1 id="决战聚贤庄二-–UP主：Super也好君"><a href="#决战聚贤庄二-–UP主：Super也好君" class="headerlink" title="决战聚贤庄二 –UP主：Super也好君"></a>决战聚贤庄二 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-ZZpbJIqH" src="//player.bilibili.com/player.html?bvid=BV1vT4y1M71c&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-ZZpbJIqH").style.height=document.getElementById("mmedia-ZZpbJIqH").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-ZZpbJIqH").style.height=document.getElementById("mmedia-ZZpbJIqH").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽一-–UP主：Super也好君"><a href="#CCTV5之脏无稽一-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽一 –UP主：Super也好君"></a>CCTV5之脏无稽一 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-ACWKryCJ" src="//player.bilibili.com/player.html?bvid=BV19f4y1D7vp&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-ACWKryCJ").style.height=document.getElementById("mmedia-ACWKryCJ").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-ACWKryCJ").style.height=document.getElementById("mmedia-ACWKryCJ").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽二-–UP主：Super也好君"><a href="#CCTV5之脏无稽二-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽二 –UP主：Super也好君"></a>CCTV5之脏无稽二 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-WGaVhqLm" src="//player.bilibili.com/player.html?bvid=BV1Kk4y1C7zA&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-WGaVhqLm").style.height=document.getElementById("mmedia-WGaVhqLm").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-WGaVhqLm").style.height=document.getElementById("mmedia-WGaVhqLm").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽三-–UP主：Super也好君"><a href="#CCTV5之脏无稽三-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽三 –UP主：Super也好君"></a>CCTV5之脏无稽三 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-pQKxlnyD" src="//player.bilibili.com/player.html?bvid=BV14a4y1L757&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-pQKxlnyD").style.height=document.getElementById("mmedia-pQKxlnyD").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-pQKxlnyD").style.height=document.getElementById("mmedia-pQKxlnyD").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽四-–UP主：Super也好君"><a href="#CCTV5之脏无稽四-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽四 –UP主：Super也好君"></a>CCTV5之脏无稽四 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-tYxLRQIK" src="//player.bilibili.com/player.html?bvid=BV19K411A7mM&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-tYxLRQIK").style.height=document.getElementById("mmedia-tYxLRQIK").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-tYxLRQIK").style.height=document.getElementById("mmedia-tYxLRQIK").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽五-–UP主：Super也好君"><a href="#CCTV5之脏无稽五-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽五 –UP主：Super也好君"></a>CCTV5之脏无稽五 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-klzHjcmq" src="//player.bilibili.com/player.html?bvid=BV1kT4y1F7Mh&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-klzHjcmq").style.height=document.getElementById("mmedia-klzHjcmq").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-klzHjcmq").style.height=document.getElementById("mmedia-klzHjcmq").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽六-–UP主：Super也好君"><a href="#CCTV5之脏无稽六-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽六 –UP主：Super也好君"></a>CCTV5之脏无稽六 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-SyudAmOR" src="//player.bilibili.com/player.html?bvid=BV1VK411V7NJ&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-SyudAmOR").style.height=document.getElementById("mmedia-SyudAmOR").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-SyudAmOR").style.height=document.getElementById("mmedia-SyudAmOR").scrollWidth*0.76+"px";            };        </script>        ]]></content>
       
     </entry>
     
@@ -205,17 +216,6 @@
     
     
     <entry>
-      <title>黑科技</title>
-      <link href="bkeji/index.html"/>
-      <url>bkeji/index.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="决战聚贤庄-–UP主：Super也好君"><a href="#决战聚贤庄-–UP主：Super也好君" class="headerlink" title="决战聚贤庄 –UP主：Super也好君"></a>决战聚贤庄 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-GgavWuFB" src="//player.bilibili.com/player.html?bvid=BV1py4y1q79G&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-GgavWuFB").style.height=document.getElementById("mmedia-GgavWuFB").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-GgavWuFB").style.height=document.getElementById("mmedia-GgavWuFB").scrollWidth*0.76+"px";            };        </script>          <h1 id="决战聚贤庄二-–UP主：Super也好君"><a href="#决战聚贤庄二-–UP主：Super也好君" class="headerlink" title="决战聚贤庄二 –UP主：Super也好君"></a>决战聚贤庄二 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-wFmuFHHb" src="//player.bilibili.com/player.html?bvid=BV1vT4y1M71c&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-wFmuFHHb").style.height=document.getElementById("mmedia-wFmuFHHb").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-wFmuFHHb").style.height=document.getElementById("mmedia-wFmuFHHb").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽一-–UP主：Super也好君"><a href="#CCTV5之脏无稽一-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽一 –UP主：Super也好君"></a>CCTV5之脏无稽一 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-ZgMPFVba" src="//player.bilibili.com/player.html?bvid=BV19f4y1D7vp&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-ZgMPFVba").style.height=document.getElementById("mmedia-ZgMPFVba").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-ZgMPFVba").style.height=document.getElementById("mmedia-ZgMPFVba").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽二-–UP主：Super也好君"><a href="#CCTV5之脏无稽二-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽二 –UP主：Super也好君"></a>CCTV5之脏无稽二 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-nHVajuTX" src="//player.bilibili.com/player.html?bvid=BV1Kk4y1C7zA&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-nHVajuTX").style.height=document.getElementById("mmedia-nHVajuTX").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-nHVajuTX").style.height=document.getElementById("mmedia-nHVajuTX").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽三-–UP主：Super也好君"><a href="#CCTV5之脏无稽三-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽三 –UP主：Super也好君"></a>CCTV5之脏无稽三 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-uVvVXhNu" src="//player.bilibili.com/player.html?bvid=BV14a4y1L757&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-uVvVXhNu").style.height=document.getElementById("mmedia-uVvVXhNu").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-uVvVXhNu").style.height=document.getElementById("mmedia-uVvVXhNu").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽四-–UP主：Super也好君"><a href="#CCTV5之脏无稽四-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽四 –UP主：Super也好君"></a>CCTV5之脏无稽四 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-uTNSwvpN" src="//player.bilibili.com/player.html?bvid=BV19K411A7mM&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-uTNSwvpN").style.height=document.getElementById("mmedia-uTNSwvpN").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-uTNSwvpN").style.height=document.getElementById("mmedia-uTNSwvpN").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽五-–UP主：Super也好君"><a href="#CCTV5之脏无稽五-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽五 –UP主：Super也好君"></a>CCTV5之脏无稽五 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-SecxqNnB" src="//player.bilibili.com/player.html?bvid=BV1kT4y1F7Mh&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-SecxqNnB").style.height=document.getElementById("mmedia-SecxqNnB").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-SecxqNnB").style.height=document.getElementById("mmedia-SecxqNnB").scrollWidth*0.76+"px";            };        </script>          <h1 id="CCTV5之脏无稽六-–UP主：Super也好君"><a href="#CCTV5之脏无稽六-–UP主：Super也好君" class="headerlink" title="CCTV5之脏无稽六 –UP主：Super也好君"></a>CCTV5之脏无稽六 –UP主：Super也好君</h1>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-QgNcxyZl" src="//player.bilibili.com/player.html?bvid=BV1VK411V7NJ&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-QgNcxyZl").style.height=document.getElementById("mmedia-QgNcxyZl").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-QgNcxyZl").style.height=document.getElementById("mmedia-QgNcxyZl").scrollWidth*0.76+"px";            };        </script>        ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>分类</title>
       <link href="categories/index.html"/>
       <url>categories/index.html</url>
@@ -227,22 +227,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="css/aplayer.css"/>
-      <url>css/aplayer.css</url>
+      <title>土狼必须死</title>
+      <link href="fate/index.html"/>
+      <url>fate/index.html</url>
       
-        <content type="html"><![CDATA[.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }  ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="css/title.css"/>
-      <url>css/title.css</url>
-      
-        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
+        <content type="html"><![CDATA[<h1 id="无限剑制"><a href="#无限剑制" class="headerlink" title="无限剑制"></a>无限剑制</h1><center> <font size="6" color="#dd0000"> Archer</font><p><code>体は剣baiで出来ている.</code> –此身为剑所成</p><p><code>血潮は鉄で 心は硝子.</code> –（血bai潮如铁 心如琉璃）du</p><p><code>几たびの戦场を越えて不败.</code>  –（纵横无数战场而不败）</p><p><code>ただ一度の败走もなく.</code> –（未尝一次败北）</p><p><code>ただ一度の胜利もなし.</code> –（亦未得一次胜利）</p><p><code>担い手ここに独り、剣の丘で鉄を锻つ.</code>–（旗手在此孤身一人，铸剑于剑丘之上）</p><p><code>ならば、我が生涯に意味は不要ず.</code> –（那么，此生无须任何意义）</p><p><code>この体は”无限の剣”で出来ていた</code> –（此身定为“无限之剑”所成）</p></center><p></p><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/7.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -271,11 +260,11 @@
     
     
     <entry>
-      <title>鬼刀的小妹妹们</title>
-      <link href="guidao/index.html"/>
-      <url>guidao/index.html</url>
+      <title></title>
+      <link href="css/aplayer.css"/>
+      <url>css/aplayer.css</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd8.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd9.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd10.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd11.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd12.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd13.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd14.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd15.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd16.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd17.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd18.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd19.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd20.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd21.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd22.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd23.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd24.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd25.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd26.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd27.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd28.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd29.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd30.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd31.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd32.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd33.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd34.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd35.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd36.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd37.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd38.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd39.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd40.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd41.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd42.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd43.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd44.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd45.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd46.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd47.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd48.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd49.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd51.png"></p>          </div>]]></content>
+        <content type="html"><![CDATA[.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }  ]]></content>
       
     </entry>
     
@@ -283,10 +272,10 @@
     
     <entry>
       <title></title>
-      <link href="js/ripples.js"/>
-      <url>js/ripples.js</url>
+      <link href="css/title.css"/>
+      <url>css/title.css</url>
       
-        <content type="html"><![CDATA[$(document).ready(function () {    try {      $("#page-header").ripples({        resolution: 512,        dropRadius: 10, //px        perturbance: 0.04,      });    } catch (e) {      $(".error").show().text(e);    }  });]]></content>
+        <content type="html"><![CDATA[/* 网站标题、副标题闪光 */#page-header #site-title,#page-header #site-subtitle {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 0, 222) 0px 0px 30px, rgb(255, 0, 222) 0px 0px 40px,    rgb(255, 0, 222) 0px 0px 70px, rgb(255, 0, 222) 0px 0px 80px,    rgb(255, 0, 222) 0px 0px 100px;}#page-header #site-title:hover,#page-header #site-subtitle:hover {  color: rgb(255, 255, 255);  text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 20px,    rgb(255, 255, 255) 0px 0px 30px, rgb(0, 255, 255) 0px 0px 40px,    rgb(0, 255, 255) 0px 0px 70px, rgb(0, 255, 255) 0px 0px 80px,    rgb(0, 255, 255) 0px 0px 100px;}]]></content>
       
     </entry>
     
@@ -304,6 +293,28 @@
     
     
     <entry>
+      <title>lenovo</title>
+      <link href="lenovo/index.html"/>
+      <url>lenovo/index.html</url>
+      
+        <content type="html"><![CDATA[<p>联想家的锁屏墙纸有些还真是漂亮！收集一下  </p><div class="justified-gallery"><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo0.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo1.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo2.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo3.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo4.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo5.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo6.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo7.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo8.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo9.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo10.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo11.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo12.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo13.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo14.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo15.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo16.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo17.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo18.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo19.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo20.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo21.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo22.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo23.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo24.jpg"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="js/ripples.js"/>
+      <url>js/ripples.js</url>
+      
+        <content type="html"><![CDATA[$(document).ready(function () {    try {      $("#page-header").ripples({        resolution: 512,        dropRadius: 10, //px        perturbance: 0.04,      });    } catch (e) {      $(".error").show().text(e);    }  });]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="js/weather.js"/>
       <url>js/weather.js</url>
@@ -315,33 +326,22 @@
     
     
     <entry>
-      <title>漫威群英传</title>
-      <link href="marvel/index.html"/>
-      <url>marvel/index.html</url>
+      <title>鬼刀的小妹妹们</title>
+      <link href="guidao/index.html"/>
+      <url>guidao/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv14.jpg"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>lenovo</title>
-      <link href="lenovo/index.html"/>
-      <url>lenovo/index.html</url>
-      
-        <content type="html"><![CDATA[<p>联想家的锁屏墙纸有些还真是漂亮！收集一下  </p><div class="justified-gallery"><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo0.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo1.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo2.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo3.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo4.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo5.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo6.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo7.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo8.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo9.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo10.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo11.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo12.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo13.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo14.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo15.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo16.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo17.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo18.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo19.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo20.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo21.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testlenovo22.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd1.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd2.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd3.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd5.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd6.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd7.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd8.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd9.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd10.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd11.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd12.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd13.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd14.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd15.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd16.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd17.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd18.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd19.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd20.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd21.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd22.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd23.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd24.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd25.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd26.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd27.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd28.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd29.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd30.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd31.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd32.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd33.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd34.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd35.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd36.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd37.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd38.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd39.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd40.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd41.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd42.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd43.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd44.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd45.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd46.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd47.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd48.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd49.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd50.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blade/gd51.png"></p>          </div>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>土狼必须死</title>
-      <link href="fate/index.html"/>
-      <url>fate/index.html</url>
+      <title>千朵万朵压枝低</title>
+      <link href="scenery/index.html"/>
+      <url>scenery/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="无限剑制"><a href="#无限剑制" class="headerlink" title="无限剑制"></a>无限剑制</h1><center> <font size="6" color="#dd0000"> Archer</font><p><code>体は剣baiで出来ている.</code> –此身为剑所成</p><p><code>血潮は鉄で 心は硝子.</code> –（血bai潮如铁 心如琉璃）du</p><p><code>几たびの戦场を越えて不败.</code>  –（纵横无数战场而不败）</p><p><code>ただ一度の败走もなく.</code> –（未尝一次败北）</p><p><code>ただ一度の胜利もなし.</code> –（亦未得一次胜利）</p><p><code>担い手ここに独り、剣の丘で鉄を锻つ.</code>–（旗手在此孤身一人，铸剑于剑丘之上）</p><p><code>ならば、我が生涯に意味は不要ず.</code> –（那么，此生无须任何意义）</p><p><code>この体は”无限の剣”で出来ていた</code> –（此身定为“无限之剑”所成）</p></center><p></p><div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/4.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/fate/7.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -370,11 +370,11 @@
     
     
     <entry>
-      <title>千朵万朵压枝低</title>
-      <link href="scenery/index.html"/>
-      <url>scenery/index.html</url>
+      <title>漫威群英传</title>
+      <link href="marvel/index.html"/>
+      <url>marvel/index.html</url>
       
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/20.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/scenery/23.jpg"><br><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>          </div>]]></content>
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/marvel/mv14.jpg"></p>          </div>]]></content>
       
     </entry>
     
@@ -425,17 +425,6 @@
     
     
     <entry>
-      <title>夏目友人帐</title>
-      <link href="xmyrz/index.html"/>
-      <url>xmyrz/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img1.png"></p>          </div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>黄四娘家花满蹊</title>
       <link href="topimgs/index.html"/>
       <url>topimgs/index.html</url>
@@ -458,11 +447,22 @@
     
     
     <entry>
+      <title>夏目友人帐</title>
+      <link href="xmyrz/index.html"/>
+      <url>xmyrz/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="justified-gallery"><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img0.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img1.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img2.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img3.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img4.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img5.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img6.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img7.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img8.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img9.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img0.png"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/friends/img1.png"></p>          </div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>粤语经典</title>
       <link href="yueyu/index.html"/>
       <url>yueyu/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><pre><code>&lt;div style="position:relative; padding-bottom:75%; width:100%; height:0"&gt;    &lt;iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"&gt;&lt;/iframe&gt;&lt;/div&gt; */</code></pre>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-zYHazYyD" src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-zYHazYyD").style.height=document.getElementById("mmedia-zYHazYyD").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-zYHazYyD").style.height=document.getElementById("mmedia-zYHazYyD").scrollWidth*0.76+"px";            };        </script>        ]]></content>
+        <content type="html"><![CDATA[<h1 id="粤语经典收集"><a href="#粤语经典收集" class="headerlink" title="粤语经典收集"></a>粤语经典收集</h1><hr><h2 id="郑中基–《无赖》"><a href="#郑中基–《无赖》" class="headerlink" title="郑中基–《无赖》"></a>郑中基–《无赖》</h2><pre><code>&lt;div style="position:relative; padding-bottom:75%; width:100%; height:0"&gt;    &lt;iframe src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"&gt;&lt;/iframe&gt;&lt;/div&gt; */</code></pre>        <style>.bbplayer{width: 100%; max-width: 850px; margin: auto}</style>        <div class="bbplayer">        <iframe class="bbplayer" id="mmedia-BrAxOPHG" src="//player.bilibili.com/player.html?bvid=BV1PJ411t7gp&amp;page=1&amp;high_quality=1&amp;danmaku=true" allowfullscreen="no" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"></iframe>        </div>        <script>            document.getElementById("mmedia-BrAxOPHG").style.height=document.getElementById("mmedia-BrAxOPHG").scrollWidth*0.76+"px";            window.onresize = function(){              document.getElementById("mmedia-BrAxOPHG").style.height=document.getElementById("mmedia-BrAxOPHG").scrollWidth*0.76+"px";            };        </script>        ]]></content>
       
     </entry>
     
