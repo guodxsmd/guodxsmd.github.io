@@ -37,51 +37,210 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/1243066710.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure>
+    <title>MarkDown语法学习记录</title>
+    <url>/4136000161.html</url>
+    <content><![CDATA[<h1 id="Markdown学习记录"><a href="#Markdown学习记录" class="headerlink" title="Markdown学习记录"></a>Markdown学习记录</h1><p>近来一直用markdown来写东西，标准化书写格式非常讨喜。因为没有系统性的进行过学习，经常是一边写一边问度娘语法，挺不方便。索性整理出该系语法的标准格式，一方面备查，一方面也是系统性的学习一遍。  </p>
+<blockquote>
+<p>Markdown编辑器本身是内容写作工具，本身并不支持文字排版，理论上它只是指出哪些内容是表格，哪些内容是标题，哪些是正文图片代码超链接等等。因此Markdown的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然，其目标是实现“易写易读”。<br>Markdown 语法的目标是：成为一种适用于网络的书写语言。 因此，Markdown是兼容Html，HTML 是一种发布的格式，Markdown 是一种书写的格式。就这样，Markdown 的格式语法只涵盖纯文本可以涵盖的范围。不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。<br>因此，简单来说，写一个Markdown文档，可以将直接使用Markdown语法和Html的标签混合进行使用，因为最后都会转换成Html，但要注意的是，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。  </p>
+</blockquote>
+<h2 id="Markdown纯文本基本语法"><a href="#Markdown纯文本基本语法" class="headerlink" title="Markdown纯文本基本语法"></a>Markdown纯文本基本语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>Markdown有两种标题语法：<code>Setext</code>和<code>atx</code>形式。<br><code>Setext</code>形式是用底线的形式来标记标题，利用<code>=</code>(最高阶标题)和<code>-</code>(第二阶标题)，例如：  </p>
+<figure class="highlight md"><table><tbody><tr><td class="code"><pre><code class="hljs MD">这是一级标题<br>======<br>这是二级标题<br>------<br></code></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure>
+<p>其效果如下：</p>
+<blockquote>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2></blockquote>
+<p>下边的<code>=</code>和<code>-</code>数量不限。  </p>
+<blockquote>
+<p>需要注意一点的是，由于Markdown语法里的分割线也是<code>------</code>，因此在使用分割线时，需要回车空出一行，不然会把上面的文字识别为第二阶标题。  </p>
+</blockquote>
+<p>那么三级标题、四级标题等等等等怎么写？我也不知道，哈哈哈哈！不过我知道<code>Atx</code>格式是怎么写的，来看看：<br><code>Atx</code>格式就简单了，在行首敲1-6个<code>#</code>，就对应了一至六级标题，例如：</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># 这是一级标题</span><br><span class="hljs-section">## 这是二级标题</span><br><span class="hljs-section">### 这是三级标题</span><br><span class="hljs-section">#### 这是四级标题</span><br><span class="hljs-section">##### 这是五级标题</span><br><span class="hljs-section">###### 这是六级标题</span><br></code></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure>
+<p>效果如下：  </p>
+<h1 id="这是一级标题-1"><a href="#这是一级标题-1" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题-1"><a href="#这是二级标题-1" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><p>需要注意的是，标准语法一般需要在<code>#</code>后面加一个空格再写文字，不然可能无法识别。  </p>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p><code>Markdown</code>使用星号<code>(*)</code>和底线<code>(_)</code>作为标记强调字词的符号，可以自由选择喜欢的样式，唯一的限制是，用什么符号开启标签就要用什么符号结束。个人比较喜欢<code>*</code>，毕竟不区分全角半角，不用切换输入法，直接用舒服。示例：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">**字体加粗**<br>__字体也加粗__<br>*字体倾斜*<br>_字体也倾斜_<br>***加粗倾斜***<br>___加粗倾斜___<br>~~这玩意儿是删除线效果~~<br></code></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure>
+<p>显示效果如下：<br><strong>字体加粗</strong><br><strong>字体也加粗</strong><br><em>字体倾斜</em><br><em>字体也倾斜</em><br><strong><em>加粗倾斜</em></strong><br><strong><em>加粗倾斜</em></strong><br><del>这玩意儿是删除线效果</del>  </p>
+<blockquote>
+<p>注意，强调也可以直接插在文字中间，但是如果<code>*</code>和<code>_</code>两边都有空白的话，它们就只会被当作普通的符号。如果要在文字前后直接插入普通的星号或底线，可以用反斜线<code>\</code>,如 *  _</p>
+</blockquote>
+<p>效果： *  _  </p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>可以在一行中用三个以上的星号、减号、底线来建立一个分割线，行内不能有其它的内容。也可以在星号或者减号中间插入空格。示例：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">* * *<br>***<br>************<br>- - -<br>------<br>___<br></code></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>
-<div id="weather-v2-plugin-simple"></div>
-<script>
-WIDGET = {
-  CONFIG: {
-    "modules": "01234",
-    "background": 1,
-    "tmpColor": "FFFFFF",
-    "tmpSize": 16,
-    "cityColor": "FFFFFF",
-    "citySize": 16,
-    "aqiSize": 16,
-    "weatherIconSize": 24,
-    "alertIconSize": 18,
-    "padding": "10px 10px 10px 10px",
-    "shadow": "1",
-    "language": "auto",
-    "borderRadius": 5,
-    "fixed": "false",
-    "vertical": "middle",
-    "horizontal": "center",
-    "key": "nG2XlmAkp1"
-  }
-}
-</script>
-<script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
+<p>效果如下：  </p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>在引用的内容前面加<code>&gt;</code>即可。在<code>Markdown</code>文件中建立一个区块引用，示例：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">&gt; 我来组成引用片段<br>&gt; 还有我<br>&gt; 晚上吃什么？<br></code></pre></td></tr></tbody></table></figure>
 
-<h2 id="测试一下B站视频"><a href="#测试一下B站视频" class="headerlink" title="测试一下B站视频"></a>测试一下B站视频</h2><iframe class="bilibili" src="//player.bilibili.com/player.html?aid=80702836&amp;bvid=BV19J411W7Xu&amp;cid=138111823&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<p>效果如下：  </p>
+<blockquote>
+<p>我来组成引用片段<br>还有我<br>晚上吃什么？</p>
+</blockquote>
+<p><code>Markdown</code>允许偷懒，只在整个段落的第一行前面加<code>&gt;</code>:  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">&gt; 先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。<br><br>&gt; 宫中府中，俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之理，不宜偏私，使内外异法也。<br><br>&gt; 侍中、侍郎郭攸之、费祎、董允等，此皆良实，志虑忠纯，是以先帝简拔以遗陛下。愚以为宫中之事，事无大小，悉以咨之，然后施行，必能裨补阙漏，有所广益。将军向宠，性行淑均，晓畅军事，试用于昔日，先帝称之曰能，是以众议举宠为督。愚以为营中之事，悉以咨之，必能使行阵和睦，优劣得所。<br><br>&gt; 亲贤臣，远小人，此先汉所以兴隆也；亲小人，远贤臣，此后汉所以倾颓也。先帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也。侍中、尚书、长史、参军，此悉贞良死节之臣，愿陛下亲之信之，则汉室之隆，可计日而待也。<br><br>&gt; 臣本布衣，躬耕于南阳，苟全性命于乱世，不求闻达于诸侯。先帝不以臣卑鄙，猥自枉屈，三顾臣于草庐之中，咨臣以当世之事，由是感激，遂许先帝以驱驰。后值倾覆，受任于败军之际，奉命于危难之间，尔来二十有一年矣。先帝知臣谨慎，故临崩寄臣以大事也。受命以来，夙夜忧叹，恐托付不效，以伤先帝之明，故五月渡泸，深入不毛。今南方已定，兵甲已足，当奖率三军，北定中原，庶竭驽钝，攘除奸凶，兴复汉室，还于旧都。此臣所以报先帝而忠陛下之职分也。至于斟酌损益，进尽忠言，则攸之、祎、允之任也。<br><br>&gt; 愿陛下托臣以讨贼兴复之效，不效，则治臣之罪，以告先帝之灵。若无兴德之言，则责攸之、祎、允等之慢，以彰其咎；陛下亦宜自谋，以咨诹善道，察纳雅言，深追先帝遗诏，臣不胜受恩感激。<br><br>&gt; 今当远离，临表涕零，不知所言。<br></code></pre></td></tr></tbody></table></figure>
 
-<h2 id="测试COS图床"><a href="#测试COS图床" class="headerlink" title="测试COS图床"></a>测试COS图床</h2><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>
-]]></content>
+<p>效果如下：  </p>
+<blockquote>
+<p>先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。</p>
+</blockquote>
+<blockquote>
+<p>宫中府中，俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之理，不宜偏私，使内外异法也。</p>
+</blockquote>
+<blockquote>
+<p>侍中、侍郎郭攸之、费祎、董允等，此皆良实，志虑忠纯，是以先帝简拔以遗陛下。愚以为宫中之事，事无大小，悉以咨之，然后施行，必能裨补阙漏，有所广益。将军向宠，性行淑均，晓畅军事，试用于昔日，先帝称之曰能，是以众议举宠为督。愚以为营中之事，悉以咨之，必能使行阵和睦，优劣得所。</p>
+</blockquote>
+<blockquote>
+<p>亲贤臣，远小人，此先汉所以兴隆也；亲小人，远贤臣，此后汉所以倾颓也。先帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也。侍中、尚书、长史、参军，此悉贞良死节之臣，愿陛下亲之信之，则汉室之隆，可计日而待也。</p>
+</blockquote>
+<blockquote>
+<p>臣本布衣，躬耕于南阳，苟全性命于乱世，不求闻达于诸侯。先帝不以臣卑鄙，猥自枉屈，三顾臣于草庐之中，咨臣以当世之事，由是感激，遂许先帝以驱驰。后值倾覆，受任于败军之际，奉命于危难之间，尔来二十有一年矣。先帝知臣谨慎，故临崩寄臣以大事也。受命以来，夙夜忧叹，恐托付不效，以伤先帝之明，故五月渡泸，深入不毛。今南方已定，兵甲已足，当奖率三军，北定中原，庶竭驽钝，攘除奸凶，兴复汉室，还于旧都。此臣所以报先帝而忠陛下之职分也。至于斟酌损益，进尽忠言，则攸之、祎、允之任也。</p>
+</blockquote>
+<blockquote>
+<p>愿陛下托臣以讨贼兴复之效，不效，则治臣之罪，以告先帝之灵。若无兴德之言，则责攸之、祎、允等之慢，以彰其咎；陛下亦宜自谋，以咨诹善道，察纳雅言，深追先帝遗诏，臣不胜受恩感激。</p>
+</blockquote>
+<blockquote>
+<p>今当远离，临表涕零，不知所言。</p>
+</blockquote>
+<p>再次致敬诸葛武侯！<br>区块的引用是可以嵌套的，就是引用内的引用，只要根据层次加上不同数量的<code>&gt;</code>即可：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">&gt; 我是第一层引用<br>&gt;<br>&gt; &gt; 我是第二层<br>&gt;<br>&gt; &gt; &gt; 你猜我是第几层？<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：</p>
+<blockquote>
+<p>我是第一层引用</p>
+<blockquote>
+<p>我是第二层</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>你猜我是第几层？</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>在引用的区块内也可以使用其他的<code>Markdown</code>语法，包括标题、列表、代码区块等。  </p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p><code>Markdown</code>支持有序列表和无序列表。无序列表使用星号、加号或减号作为列表标记：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">* 列表内容1<br>- 列表内容2<br>+ 列表内容3<br>注意：`* - +`和内容之间要有一个空格。<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：</p>
+<ul>
+<li>列表内容1</li>
+</ul>
+<ul>
+<li>列表内容2</li>
+</ul>
+<ul>
+<li>列表内容3<br>注意：<code>* - +</code>和内容之间要有一个空格。</li>
+</ul>
+<p>有序列表则使用数字加一个英文句点<code>.</code>作为列表标记：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">3. 我是第一<br>1. 我是第二<br>100. 我是三弟<br>同样的，序号和内容之间要有一个空格。<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：</p>
+<ol start="3">
+<li>我是第一</li>
+<li>我是第二</li>
+<li>我是三弟<br>同样的，序号和内容之间要有一个空格。</li>
+</ol>
+<p>显然，具体的数字并不影响列表的输出结果，只是一个标记。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">1. 凉<br>1. 风<br>1. 有<br>1. 信<br>1000. 秋<br>0. 月<br>6. 无<br>99. 边<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：  </p>
+<ol>
+<li>凉</li>
+<li>风</li>
+<li>有</li>
+<li>信</li>
+<li>秋</li>
+<li>月</li>
+<li>无</li>
+<li>边</li>
+</ol>
+<p>列表也是可以嵌套的，上一级和下一级之间敲三个空格即可：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">* 凉风有信<br>   * 秋月无边<br>   * 亏我思娇的情绪好比<br>      * 度日如年...<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：  </p>
+<ul>
+<li>凉风有信<ul>
+<li>秋月无边</li>
+<li>亏我思娇的情绪好比<ul>
+<li>度日如年…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>列表项目可以包含多个段落，每个项目下的段落都必须缩进4个空格或者一个制表符：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">1. 东风夜放花千树<br>    更吹落<br>    星如雨<br>    宝马雕车香满路<br>    凤箫声动<br>    玉壶光转<br>    一夜鱼龙舞<br>2. 蛾儿雪柳黄金缕<br>    笑语盈盈暗香去<br>    众里寻她千百度<br>    蓦然回首<br>    那人却在<br>    灯火阑珊处<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：</p>
+<ol>
+<li>东风夜放花千树<br> 更吹落<br> 星如雨<br> 宝马雕车香满路<br> 凤箫声动<br> 玉壶光转<br> 一夜鱼龙舞</li>
+<li>蛾儿雪柳黄金缕<br> 笑语盈盈暗香去<br> 众里寻她千百度<br> 蓦然回首<br> 那人却在<br> 灯火阑珊处</li>
+</ol>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>直接上写法：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">表头|表头|表头|表头<br>----|:--:|--:|:-:|<br>默认居左|文字居中|文字居右|文字居中<br>第二行|二行|二行|二行<br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th align="center">表头</th>
+<th align="right">表头</th>
+<th align="center">表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>默认居左</td>
+<td align="center">文字居中</td>
+<td align="right">文字居右</td>
+<td align="center">文字居中</td>
+</tr>
+<tr>
+<td>第二行</td>
+<td align="center">二行</td>
+<td align="right">二行</td>
+<td align="center">二行</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>表头和单元格内容用<code>|</code>隔开，用<code>-</code>来分割表头和表格内容，<code>-</code>只需要一个就行，多敲几个是为了对齐好看些。<br>文字默认为左对齐，<code>-</code>两边加上冒号<code>:</code>表示文字居中，<code>-</code>右边加上冒号<code>:</code>表示文字居右。</p>
+</blockquote>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>在<code>Markdown</code>语法中加入代码块的方式有两种。</p>
+<p>第一种，直接缩进4个空格或者一个制表符即可：</p>
+<p>```<br>下面是几行代码</p>
+<pre><code> 这就是一个代码块
+ 比如：
+ a + b = c</code></pre>
+<p>```</p>
+<p>效果如下：</p>
+<pre><code>这就是一个代码块
+比如：
+a + b = c</code></pre>
+<p>第二种方式我比较喜欢用：<br>单行代码，在代码之间用一个反引号`包括起来即可：</p>
+<pre><code>`假装我是一行代码`</code></pre>
+<p>效果就是这样的：<code>假装我是一串代码</code>。</p>
+<p>代码块：把代码之间分别用三个反引号`包起来即可：</p>
+<p>```<br>第一行代码<br>第二行代码<br>第三行代码<br>```</p>
+<p>效果如下：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><code class="hljs plain">第一行代码<br>第二行代码<br>第三行代码<br></code></pre></td></tr></tbody></table></figure>
+
+<p>算了，四个空格或者一个制表符的用法我是用不好，也不习惯，反正我是不用 - -！</p>
+<p>其实还有一个小花招，就是用两个反引号``把需要强调的行内内容包起来，起到一个彩色强调的效果，比如：</p>
+<p>在这行文字里，我想强调<code>happy</code>这个单词，还有<code>爽歪歪</code>这个词语，就用反引号把它俩各自括起来，美观嘛。浪还是要的。</p>
+<h3 id="段落和换行"><a href="#段落和换行" class="headerlink" title="段落和换行"></a>段落和换行</h3><p><code>Markdown</code>的段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行，<code>空行的定义是显示上看起来像是空的，便会被视为空行。</code>比方说，若某一行只包含空格和制表符，则该行也会被视为空行。</p>
+<p>普通段落不该用空格或制表符来缩进，<strong>我们在两个不同的文字块之间，一定要空行以示区分，不然就会被归入同一段落里。</strong><code>Markdown</code>允许段落内强迫换行(插入换行符)，如果想要空一行，在插入处先按入两个以上的空格然后回车即可。</p>
+<p>但是有时也可以使用标记来强制空行和空格，比如需要首行缩进的时候，一个空格大小的表示为：<code>&amp;nbsp;</code>，空行为<code>&amp;emsp;</code>，注意句末的分号<code>;</code>。或者在全角输入法里敲空格，那么这个空格会被认为是一个空格。</p>
+<h2 id="Markdown纯文本进阶语法"><a href="#Markdown纯文本进阶语法" class="headerlink" title="Markdown纯文本进阶语法"></a><code>Markdown</code>纯文本进阶语法</h2>]]></content>
+      <tags>
+        <tag>markdown</tag>
+        <tag>学习</tag>
+      </tags>
   </entry>
   <entry>
     <title>butterfly特效篇</title>
@@ -158,22 +317,51 @@ WIDGET = {
       </tags>
   </entry>
   <entry>
-    <title>更换jsDelivr+github图床记录</title>
-    <url>/2118430318.html</url>
-    <content><![CDATA[<h1 id="jsDelivr-github免费调整图床使用记录"><a href="#jsDelivr-github免费调整图床使用记录" class="headerlink" title="jsDelivr+github免费调整图床使用记录"></a>jsDelivr+github免费调整图床使用记录</h1><p>更换图床的背景：之前在用的是阿里家的<code>OSS</code>，本来挺好的，也觉得大平台的资源嘛，只要质量有保证<br>付点费也可以接受，直到有一天，提示欠费0.01元将要停止服务，这特么过分了,什么态度，果断放弃。</p>
-<h2 id="新图床的选择"><a href="#新图床的选择" class="headerlink" title="新图床的选择"></a>新图床的选择</h2><p>早就听说过大名鼎鼎的<code>jsdelivr</code>，既然放弃了阿里<code>OSS</code>，就来搞一下<code>js+github</code>吧。<br>不知道人家<code>jsDelivr</code>为啥这么良心，提供这么好的CDN服务还不收费，而且你压根儿就不需要去他们那注册，连他们的网站都不需要登陆，直接加域名就可以免费快捷的帮着加速资源，服气！</p>
-<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><p>首先先去<code>github</code>创建一个库，专门放需要的图片们，其实不创建它也没有关系，只要路径指定正确，<code>jsDelivr</code>都可以找到需要的图片进行CDN加速，新建一个库主要是为了方便管理。</p>
-<p>进入github个人主页，<code>new</code>新建一个仓库：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213005504.png" alt="点new新建"><br>新建仓库：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213005748.png"></p>
-<p>点击左下<code>Creat repository</code>创建，至于<code>Description</code>描述可写可不写<br>创建完自己的图片库之后点击右上角自己的头像，点击<code>settings</code><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213132509.png" alt="进入设置"><br>点击左侧栏目中的<code>Developer settings</code><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213132618.png" alt="进入开发者设置"><br>点击<code>Personal access tokens</code>然后<code>Generate new token</code>新建<code>token</code><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213132821.png" alt="新建token"><br>接下来就是简单填写一下相关内容，<code>Note</code>处是描述该<code>token</code>用途的，看自己情况随便写，主要是记得勾选<code>repo</code>,然后创建即可。<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213133300.png" alt="记得勾选repo"><br>复制生成的<code>token</code>,这家伙只出现一次，别搞丢了。<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213133421.png" alt="复制token"><br>接下来就是配置<code>PicGo</code>的图床设置了，先上图：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213133557.png" alt="github图床设置"><br><code>GitHub</code>设置：<br>设定仓库名：你的<code>github</code>用户名/刚刚创建的仓库名<br>设定分支名：<code>main</code> <strong>这里要注意一下，10月1日之后，新创建的仓库默认分支已经从<code>master</code>更换成了<code>main</code>,在此之前的分支可以继续用<code>master</code></strong><br>设定<code>Token</code>: 刚刚复制下来的<code>Token</code>。<br>指定存储路径：这里其实可以不填，图片就直接上传到仓库里，不过为了管理方便，建议还是设定一个指定的存储路径，相当于在仓库里新建一个文件夹，这样就可以把不同的图片放到不同的文件夹里，需要换文件夹的时候直接在这里把存储路径换一下就行了。<br>设定自定义域名：前缀都是一样的： <code>https://cdn.jsdelivr.net/gh/</code> 后面加上<strong>用户名/仓库名</strong>即可，如同我上面的例子，<code>https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl</code> .<br>然后设为默认图床，确定就完成了<code>GitHub</code>图床的配置。  </p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213204341.png" alt="上传图片"><br>在上传区“<strong>点击上传</strong>”，或者把图片直接拖到上传区的框里都可以，支持<code>Markdown、HTML、URL、UBB、Custom</code>格式以及剪贴板图片和图片<code>URL</code>直接上传，比如最后这张图，就是截屏工具截完之后直接点“剪贴板图片”就可以上传到<code>github</code>图库里了，然后直接在<code>markdown</code>编辑器里粘贴就完事儿，非常方便，链接如下：<br><code>![](https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213204341.png) </code> 这个就是<code>markdown</code>的图片链接格式，<code>[]</code>里可以写图片的描述，不再详述。<br>最后，赞美<code>jsDelivr</code>，赞美<code>GitHub</code>给了我们这么多可玩的东西。</p>
+    <title>Hello World</title>
+    <url>/1243066710.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>
+<div id="weather-v2-plugin-simple"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "modules": "01234",
+    "background": 1,
+    "tmpColor": "FFFFFF",
+    "tmpSize": 16,
+    "cityColor": "FFFFFF",
+    "citySize": 16,
+    "aqiSize": 16,
+    "weatherIconSize": 24,
+    "alertIconSize": 18,
+    "padding": "10px 10px 10px 10px",
+    "shadow": "1",
+    "language": "auto",
+    "borderRadius": 5,
+    "fixed": "false",
+    "vertical": "middle",
+    "horizontal": "center",
+    "key": "nG2XlmAkp1"
+  }
+}
+</script>
+<script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
+
+<h2 id="测试一下B站视频"><a href="#测试一下B站视频" class="headerlink" title="测试一下B站视频"></a>测试一下B站视频</h2><iframe class="bilibili" src="//player.bilibili.com/player.html?aid=80702836&amp;bvid=BV19J411W7Xu&amp;cid=138111823&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h2 id="测试COS图床"><a href="#测试COS图床" class="headerlink" title="测试COS图床"></a>测试COS图床</h2><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>
 ]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>jsDelivr</tag>
-        <tag>图床</tag>
-      </tags>
   </entry>
   <entry>
     <title>butterfly主题增加视频组</title>
@@ -231,6 +419,24 @@ WIDGET = {
       <tags>
         <tag>butterfly</tag>
         <tag>视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更换jsDelivr+github图床记录</title>
+    <url>/2118430318.html</url>
+    <content><![CDATA[<h1 id="jsDelivr-github免费调整图床使用记录"><a href="#jsDelivr-github免费调整图床使用记录" class="headerlink" title="jsDelivr+github免费调整图床使用记录"></a>jsDelivr+github免费调整图床使用记录</h1><p>更换图床的背景：之前在用的是阿里家的<code>OSS</code>，本来挺好的，也觉得大平台的资源嘛，只要质量有保证<br>付点费也可以接受，直到有一天，提示欠费0.01元将要停止服务，这特么过分了,什么态度，果断放弃。</p>
+<h2 id="新图床的选择"><a href="#新图床的选择" class="headerlink" title="新图床的选择"></a>新图床的选择</h2><p>早就听说过大名鼎鼎的<code>jsdelivr</code>，既然放弃了阿里<code>OSS</code>，就来搞一下<code>js+github</code>吧。<br>不知道人家<code>jsDelivr</code>为啥这么良心，提供这么好的CDN服务还不收费，而且你压根儿就不需要去他们那注册，连他们的网站都不需要登陆，直接加域名就可以免费快捷的帮着加速资源，服气！</p>
+<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><p>首先先去<code>github</code>创建一个库，专门放需要的图片们，其实不创建它也没有关系，只要路径指定正确，<code>jsDelivr</code>都可以找到需要的图片进行CDN加速，新建一个库主要是为了方便管理。</p>
+<p>进入github个人主页，<code>new</code>新建一个仓库：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213005504.png" alt="点new新建"><br>新建仓库：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213005748.png"></p>
+<p>点击左下<code>Creat repository</code>创建，至于<code>Description</code>描述可写可不写<br>创建完自己的图片库之后点击右上角自己的头像，点击<code>settings</code><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213132509.png" alt="进入设置"><br>点击左侧栏目中的<code>Developer settings</code><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213132618.png" alt="进入开发者设置"><br>点击<code>Personal access tokens</code>然后<code>Generate new token</code>新建<code>token</code><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213132821.png" alt="新建token"><br>接下来就是简单填写一下相关内容，<code>Note</code>处是描述该<code>token</code>用途的，看自己情况随便写，主要是记得勾选<code>repo</code>,然后创建即可。<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213133300.png" alt="记得勾选repo"><br>复制生成的<code>token</code>,这家伙只出现一次，别搞丢了。<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213133421.png" alt="复制token"><br>接下来就是配置<code>PicGo</code>的图床设置了，先上图：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213133557.png" alt="github图床设置"><br><code>GitHub</code>设置：<br>设定仓库名：你的<code>github</code>用户名/刚刚创建的仓库名<br>设定分支名：<code>main</code> <strong>这里要注意一下，10月1日之后，新创建的仓库默认分支已经从<code>master</code>更换成了<code>main</code>,在此之前的分支可以继续用<code>master</code></strong><br>设定<code>Token</code>: 刚刚复制下来的<code>Token</code>。<br>指定存储路径：这里其实可以不填，图片就直接上传到仓库里，不过为了管理方便，建议还是设定一个指定的存储路径，相当于在仓库里新建一个文件夹，这样就可以把不同的图片放到不同的文件夹里，需要换文件夹的时候直接在这里把存储路径换一下就行了。<br>设定自定义域名：前缀都是一样的： <code>https://cdn.jsdelivr.net/gh/</code> 后面加上<strong>用户名/仓库名</strong>即可，如同我上面的例子，<code>https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl</code> .<br>然后设为默认图床，确定就完成了<code>GitHub</code>图床的配置。  </p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213204341.png" alt="上传图片"><br>在上传区“<strong>点击上传</strong>”，或者把图片直接拖到上传区的框里都可以，支持<code>Markdown、HTML、URL、UBB、Custom</code>格式以及剪贴板图片和图片<code>URL</code>直接上传，比如最后这张图，就是截屏工具截完之后直接点“剪贴板图片”就可以上传到<code>github</code>图库里了，然后直接在<code>markdown</code>编辑器里粘贴就完事儿，非常方便，链接如下：<br><code>![](https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201213204341.png) </code> 这个就是<code>markdown</code>的图片链接格式，<code>[]</code>里可以写图片的描述，不再详述。<br>最后，赞美<code>jsDelivr</code>，赞美<code>GitHub</code>给了我们这么多可玩的东西。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>jsDelivr</tag>
+        <tag>图床</tag>
       </tags>
   </entry>
 </search>

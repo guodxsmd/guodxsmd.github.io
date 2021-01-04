@@ -6,7 +6,7 @@
   <link href="https://guodxsmd.github.io/atom.xml" rel="self"/>
   
   <link href="https://guodxsmd.github.io/"/>
-  <updated>2020-12-23T17:06:00.336Z</updated>
+  <updated>2020-12-31T11:58:05.172Z</updated>
   <id>https://guodxsmd.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MarkDown语法学习记录</title>
+    <link href="https://guodxsmd.github.io/4136000161.html"/>
+    <id>https://guodxsmd.github.io/4136000161.html</id>
+    <published>2020-12-28T13:44:15.000Z</published>
+    <updated>2020-12-31T11:58:05.172Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Markdown学习记录&quot;&gt;&lt;a href=&quot;#Markdown学习记录&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="markdown" scheme="https://guodxsmd.github.io/tags/markdown/"/>
+    
+    <category term="学习" scheme="https://guodxsmd.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>butterfly特效篇</title>
