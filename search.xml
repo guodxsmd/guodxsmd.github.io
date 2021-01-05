@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>butterfly主题增加可互动的看板娘</title>
-    <url>/1143428660.html</url>
-    <content><![CDATA[<h1 id="Butterfly主题添加会换装会互动的看板娘"><a href="#Butterfly主题添加会换装会互动的看板娘" class="headerlink" title="Butterfly主题添加会换装会互动的看板娘"></a>Butterfly主题添加会换装会互动的看板娘</h1><p>我自己做的时候参考了<a href="https://blog.csdn.net/csdn__cpp/article/details/110007453">是小小苏呀</a> 同志的博文，在这里先感谢！<br>话不多说，直接开始。<br>如果之前安装的有不会互动不会换衣服的看板娘，需要卸载掉，连衣服都不会换，是吧。。<br><code>npm uninstall hexo-helper-live2d</code></p>
-<p>然后下载大佬做好的项目包，赞美大佬！来自于 <a href="https://github.com/stevenjoezhang/live2d-widget" title="张书樵大神">张书樵</a> 大佬的项目。<br>先看看效果：  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216225713.png" alt="看板娘小展示"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216225904.png" alt="看板娘小展示">  </p>
-<h2 id="开始动手"><a href="#开始动手" class="headerlink" title="开始动手"></a>开始动手</h2><p>开始往自己博客里拿吧，可以直接去上面大佬的<code>github</code>里拿，也可以直接在我这里下载，放出链接：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">live2d-widget下载</a><br>下载好之后，解压放在<code>博客根目录/themes/butterfly/source/</code>中，如图：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216230527.png"><br>修改<strong>主题配置文件</strong>，找到<code>inject</code>处增加在<code>head</code>里：  </p>
-<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">inject:</span><br>  <span class="hljs-attr">head:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-string">&lt;script</span> <span class="hljs-string">src="/live2d-widget/autoload.js"&gt;&lt;/script&gt;</span><br></code></pre></td></tr></tbody></table></figure>
-
-<p>其他主题可以加在<code>head.ejs</code>里，其实就是放在<code>head</code>里加载就是了。<br>接下来在<strong>主题配置文件</strong>里增加：  </p>
-<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-comment">#看板娘</span><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></tbody></table></figure>
-
-<p>至此，会换装，会互动的看板娘就已经回载到自己的博客里了。当然，我们可以进行进一步的修改。  </p>
-<h2 id="进一步的配置修改"><a href="#进一步的配置修改" class="headerlink" title="进一步的配置修改"></a>进一步的配置修改</h2><ul>
-<li>修改看板娘的位置</li>
-</ul>
-<p>前往<code>live2d-widget</code>目录下，打开<code>waifu.css</code>可以修改看板娘的位置：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216232802.png" alt="我这里是让她显示在右下角，可以自行调整参数">  </p>
-<ul>
-<li>修改看板娘的场景话术内容</li>
-</ul>
-<p>在<code>waifu-tips.json</code>和<code>waifu-tips.js</code>里放了非常多的互动话术，来看看：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216233151.png" alt="这。。作者真是没少花心思，可以改为自己想要的话术"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216234607.png" alt="啧啧！"></p>
-<ul>
-<li>修改首次加载的造型</li>
-</ul>
-<p>如果想要修改默认加载的第一个造型，可以自己去指定，同样也是在<code>waifu-tips.js</code>里，作者也已经在这里进行了注释，默认为1，后面的造型依次递增，看自己喜好，试着调就行了。  </p>
-<p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216233911.png"></p>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>butterfly</tag>
-        <tag>看板娘</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown语法学习记录</title>
     <url>/4136000161.html</url>
     <content><![CDATA[<h1 id="Markdown学习记录"><a href="#Markdown学习记录" class="headerlink" title="Markdown学习记录"></a>Markdown学习记录</h1><p>近来一直用markdown来写东西，标准化书写格式非常讨喜。因为没有系统性的进行过学习，经常是一边写一边问度娘语法，挺不方便。索性整理出该系语法的标准格式，一方面备查，一方面也是系统性的学习一遍。  </p>
@@ -243,6 +207,89 @@ a + b = c</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>butterfly主题增加可互动的看板娘</title>
+    <url>/1143428660.html</url>
+    <content><![CDATA[<h1 id="Butterfly主题添加会换装会互动的看板娘"><a href="#Butterfly主题添加会换装会互动的看板娘" class="headerlink" title="Butterfly主题添加会换装会互动的看板娘"></a>Butterfly主题添加会换装会互动的看板娘</h1><p>我自己做的时候参考了<a href="https://blog.csdn.net/csdn__cpp/article/details/110007453">是小小苏呀</a> 同志的博文，在这里先感谢！<br>话不多说，直接开始。<br>如果之前安装的有不会互动不会换衣服的看板娘，需要卸载掉，连衣服都不会换，是吧。。<br><code>npm uninstall hexo-helper-live2d</code></p>
+<p>然后下载大佬做好的项目包，赞美大佬！来自于 <a href="https://github.com/stevenjoezhang/live2d-widget" title="张书樵大神">张书樵</a> 大佬的项目。<br>先看看效果：  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216225713.png" alt="看板娘小展示"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216225904.png" alt="看板娘小展示">  </p>
+<h2 id="开始动手"><a href="#开始动手" class="headerlink" title="开始动手"></a>开始动手</h2><p>开始往自己博客里拿吧，可以直接去上面大佬的<code>github</code>里拿，也可以直接在我这里下载，放出链接：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">live2d-widget下载</a><br>下载好之后，解压放在<code>博客根目录/themes/butterfly/source/</code>中，如图：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216230527.png"><br>修改<strong>主题配置文件</strong>，找到<code>inject</code>处增加在<code>head</code>里：  </p>
+<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">inject:</span><br>  <span class="hljs-attr">head:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-string">&lt;script</span> <span class="hljs-string">src="/live2d-widget/autoload.js"&gt;&lt;/script&gt;</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>其他主题可以加在<code>head.ejs</code>里，其实就是放在<code>head</code>里加载就是了。<br>接下来在<strong>主题配置文件</strong>里增加：  </p>
+<figure class="highlight yml"><table><tbody><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-comment">#看板娘</span><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>至此，会换装，会互动的看板娘就已经回载到自己的博客里了。当然，我们可以进行进一步的修改。  </p>
+<h2 id="进一步的配置修改"><a href="#进一步的配置修改" class="headerlink" title="进一步的配置修改"></a>进一步的配置修改</h2><ul>
+<li>修改看板娘的位置</li>
+</ul>
+<p>前往<code>live2d-widget</code>目录下，打开<code>waifu.css</code>可以修改看板娘的位置：<br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216232802.png" alt="我这里是让她显示在右下角，可以自行调整参数">  </p>
+<ul>
+<li>修改看板娘的场景话术内容</li>
+</ul>
+<p>在<code>waifu-tips.json</code>和<code>waifu-tips.js</code>里放了非常多的互动话术，来看看：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216233151.png" alt="这。。作者真是没少花心思，可以改为自己想要的话术"><br><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216234607.png" alt="啧啧！"></p>
+<ul>
+<li>修改首次加载的造型</li>
+</ul>
+<p>如果想要修改默认加载的第一个造型，可以自己去指定，同样也是在<code>waifu-tips.js</code>里，作者也已经在这里进行了注释，默认为1，后面的造型依次递增，看自己喜好，试着调就行了。  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/20201216233911.png"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>butterfly</tag>
+        <tag>看板娘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/1243066710.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>
+<div id="weather-v2-plugin-simple"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "modules": "01234",
+    "background": 1,
+    "tmpColor": "FFFFFF",
+    "tmpSize": 16,
+    "cityColor": "FFFFFF",
+    "citySize": 16,
+    "aqiSize": 16,
+    "weatherIconSize": 24,
+    "alertIconSize": 18,
+    "padding": "10px 10px 10px 10px",
+    "shadow": "1",
+    "language": "auto",
+    "borderRadius": 5,
+    "fixed": "false",
+    "vertical": "middle",
+    "horizontal": "center",
+    "key": "nG2XlmAkp1"
+  }
+}
+</script>
+<script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
+
+<h2 id="测试一下B站视频"><a href="#测试一下B站视频" class="headerlink" title="测试一下B站视频"></a>测试一下B站视频</h2><iframe class="bilibili" src="//player.bilibili.com/player.html?aid=80702836&amp;bvid=BV19J411W7Xu&amp;cid=138111823&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h2 id="测试COS图床"><a href="#测试COS图床" class="headerlink" title="测试COS图床"></a>测试COS图床</h2><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>butterfly特效篇</title>
     <url>/2004124661.html</url>
     <content><![CDATA[<h1 id="那些美化我们博客的代码们"><a href="#那些美化我们博客的代码们" class="headerlink" title="那些美化我们博客的代码们"></a>那些美化我们博客的代码们</h1><p>本篇内容来自于博客搭建爱好者群里的一位大佬，是夜，我们在提要求，大佬在写，基本上三五分钟就是一个特效出炉，叹为观止，<a id="more"></a>特此抄录，权作学习笔记了。<br>大佬的网站：<br><a href="https://uuuuu.cf/" title="随手搭建的测试代码用的博客">https://uuuuu.cf/</a><br><a href="https://weilining.cf/" title="ln`s blog">https://weilining.cf/</a>  </p>
@@ -315,53 +362,6 @@ a + b = c</code></pre>
         <tag>butterfly</tag>
         <tag>特效</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/1243066710.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>
-<div id="weather-v2-plugin-simple"></div>
-<script>
-WIDGET = {
-  CONFIG: {
-    "modules": "01234",
-    "background": 1,
-    "tmpColor": "FFFFFF",
-    "tmpSize": 16,
-    "cityColor": "FFFFFF",
-    "citySize": 16,
-    "aqiSize": 16,
-    "weatherIconSize": 24,
-    "alertIconSize": 18,
-    "padding": "10px 10px 10px 10px",
-    "shadow": "1",
-    "language": "auto",
-    "borderRadius": 5,
-    "fixed": "false",
-    "vertical": "middle",
-    "horizontal": "center",
-    "key": "nG2XlmAkp1"
-  }
-}
-</script>
-<script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
-
-<h2 id="测试一下B站视频"><a href="#测试一下B站视频" class="headerlink" title="测试一下B站视频"></a>测试一下B站视频</h2><iframe class="bilibili" src="//player.bilibili.com/player.html?aid=80702836&amp;bvid=BV19J411W7Xu&amp;cid=138111823&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h2 id="测试COS图床"><a href="#测试COS图床" class="headerlink" title="测试COS图床"></a>测试COS图床</h2><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>
-]]></content>
   </entry>
   <entry>
     <title>更换jsDelivr+github图床记录</title>
