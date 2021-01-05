@@ -200,7 +200,12 @@ a + b = c</code></pre>
 <h3 id="段落和换行"><a href="#段落和换行" class="headerlink" title="段落和换行"></a>段落和换行</h3><p><code>Markdown</code>的段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行，<code>空行的定义是显示上看起来像是空的，便会被视为空行。</code>比方说，若某一行只包含空格和制表符，则该行也会被视为空行。</p>
 <p>普通段落不该用空格或制表符来缩进，<strong>我们在两个不同的文字块之间，一定要空行以示区分，不然就会被归入同一段落里。</strong><code>Markdown</code>允许段落内强迫换行(插入换行符)，如果想要空一行，在插入处先按入两个以上的空格然后回车即可。</p>
 <p>但是有时也可以使用标记来强制空行和空格，比如需要首行缩进的时候，一个空格大小的表示为：<code>&amp;nbsp;</code>，空行为<code>&amp;emsp;</code>，注意句末的分号<code>;</code>。或者在全角输入法里敲空格，那么这个空格会被认为是一个空格。</p>
-<h2 id="Markdown纯文本进阶语法"><a href="#Markdown纯文本进阶语法" class="headerlink" title="Markdown纯文本进阶语法"></a><code>Markdown</code>纯文本进阶语法</h2>]]></content>
+<h2 id="Markdown纯文本进阶语法"><a href="#Markdown纯文本进阶语法" class="headerlink" title="Markdown纯文本进阶语法"></a><code>Markdown</code>纯文本进阶语法</h2><p>上面的语法其实写一些基本的东西已经足够了，但有时候还想要文档看起来更炫一些，这时候就需要一些用于排版的进阶语法了。实际上，这里用的就是<code>HTML</code>标签来实现的。  </p>
+<h3 id="更改字体、大小、颜色"><a href="#更改字体、大小、颜色" class="headerlink" title="更改字体、大小、颜色"></a>更改字体、大小、颜色</h3><p>语法：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"黑体"</span>&gt;</span>黑体字<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"微软雅黑"</span>&gt;</span>微软雅黑<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"STCAIYUN"</span>&gt;</span>华文彩云<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">red</span>&gt;</span>红色<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">#008000</span>&gt;</span>绿色<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">color</span>=<span class="hljs-string">BLUE</span>&gt;</span>蓝色<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">size</span>=<span class="hljs-string">5</span>&gt;</span>字体大小<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">face</span>=<span class="hljs-string">"黑体"</span> <span class="hljs-attr">color</span>=<span class="hljs-string">green</span> <span class="hljs-attr">size</span>=<span class="hljs-string">5</span>&gt;</span>尺寸为5的绿色黑体字<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>效果如下：<br><font face="黑体">黑体字</font><br><font face="微软雅黑">微软雅黑</font><br><font face="STCAIYUN">华文彩云</font><br><font color="red">红色</font><br><font color="#008000">绿色</font><br><font color="BLUE">蓝色</font><br><font size="5">字体大小</font><br><font face="黑体" color="green" size="5">尺寸为5的绿色黑体字</font></p>
+<h3 id="为文字添加背景色"><a href="#为文字添加背景色" class="headerlink" title="为文字添加背景色"></a>为文字添加背景色</h3>]]></content>
       <tags>
         <tag>markdown</tag>
         <tag>学习</tag>
@@ -241,53 +246,6 @@ a + b = c</code></pre>
         <tag>butterfly</tag>
         <tag>看板娘</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/1243066710.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>
-<div id="weather-v2-plugin-simple"></div>
-<script>
-WIDGET = {
-  CONFIG: {
-    "modules": "01234",
-    "background": 1,
-    "tmpColor": "FFFFFF",
-    "tmpSize": 16,
-    "cityColor": "FFFFFF",
-    "citySize": 16,
-    "aqiSize": 16,
-    "weatherIconSize": 24,
-    "alertIconSize": 18,
-    "padding": "10px 10px 10px 10px",
-    "shadow": "1",
-    "language": "auto",
-    "borderRadius": 5,
-    "fixed": "false",
-    "vertical": "middle",
-    "horizontal": "center",
-    "key": "nG2XlmAkp1"
-  }
-}
-</script>
-<script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
-
-<h2 id="测试一下B站视频"><a href="#测试一下B站视频" class="headerlink" title="测试一下B站视频"></a>测试一下B站视频</h2><iframe class="bilibili" src="//player.bilibili.com/player.html?aid=80702836&amp;bvid=BV19J411W7Xu&amp;cid=138111823&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-<h2 id="测试COS图床"><a href="#测试COS图床" class="headerlink" title="测试COS图床"></a>测试COS图床</h2><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>
-]]></content>
   </entry>
   <entry>
     <title>butterfly特效篇</title>
@@ -380,6 +338,53 @@ WIDGET = {
         <tag>jsDelivr</tag>
         <tag>图床</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/1243066710.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></tbody></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a><br>测试下载：<br><a href="https://cdn.jsdelivr.net/gh/guodxsmd/allenwbyl/blogimgs/live2d-widget.rar" target="_blank">测试下载</a></p>
+<div id="weather-v2-plugin-simple"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "modules": "01234",
+    "background": 1,
+    "tmpColor": "FFFFFF",
+    "tmpSize": 16,
+    "cityColor": "FFFFFF",
+    "citySize": 16,
+    "aqiSize": 16,
+    "weatherIconSize": 24,
+    "alertIconSize": 18,
+    "padding": "10px 10px 10px 10px",
+    "shadow": "1",
+    "language": "auto",
+    "borderRadius": 5,
+    "fixed": "false",
+    "vertical": "middle",
+    "horizontal": "center",
+    "key": "nG2XlmAkp1"
+  }
+}
+</script>
+<script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
+
+<h2 id="测试一下B站视频"><a href="#测试一下B站视频" class="headerlink" title="测试一下B站视频"></a>测试一下B站视频</h2><iframe class="bilibili" src="//player.bilibili.com/player.html?aid=80702836&amp;bvid=BV19J411W7Xu&amp;cid=138111823&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h2 id="测试COS图床"><a href="#测试COS图床" class="headerlink" title="测试COS图床"></a>测试COS图床</h2><p><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testimg1.jpg"></p>
+]]></content>
   </entry>
   <entry>
     <title>butterfly主题增加视频组</title>
