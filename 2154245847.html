@@ -1,0 +1,635 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>叛逆客户端及江湖命令收集 | 江畔独步寻花</title><meta name="author" content="Masterguo"><meta name="copyright" content="Masterguo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="操作指南截至2.58版 1.04:可以在登陆文件中定义自动载入的脚本和自动开启的功能。  1.08:当脚本的Name设为$Name,,ID设为$ID时,将会替换为当前登录的人物的名字和ID。 &#96;#G&#96;命令问题较多,已暂时删除。  1.09:显示装备的装备状态。防卡改为60秒。显示私聊。  1.10:文字方式显示技能。人物的昏迷抽筋中毒发呆掉线打坐状态的显示。  1.16:可以自定义字体和背景颜色,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="叛逆客户端及江湖命令收集">
+<meta property="og:url" content="https://guodxsmd.github.io/2154245847.html">
+<meta property="og:site_name" content="江畔独步寻花">
+<meta property="og:description" content="操作指南截至2.58版 1.04:可以在登陆文件中定义自动载入的脚本和自动开启的功能。  1.08:当脚本的Name设为$Name,,ID设为$ID时,将会替换为当前登录的人物的名字和ID。 &#96;#G&#96;命令问题较多,已暂时删除。  1.09:显示装备的装备状态。防卡改为60秒。显示私聊。  1.10:文字方式显示技能。人物的昏迷抽筋中毒发呆掉线打坐状态的显示。  1.16:可以自定义字体和背景颜色,">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd0.png">
+<meta property="article:published_time" content="2022-06-03T14:22:17.000Z">
+<meta property="article:modified_time" content="2022-06-05T09:46:03.612Z">
+<meta property="article:author" content="Masterguo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd0.png"><link rel="shortcut icon" href="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/marvelfavicon.png"><link rel="canonical" href="https://guodxsmd.github.io/2154245847"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-06-05 17:46:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><style type="text/css">#toggle-sidebar {bottom: 80px}</style><style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"><script src="/live2d-widget/autoload.js"></script><script defer src="https://rmt.dogedoge.com/fetch/~/source/jsdelivr/npm/jquery@latest/dist/jquery.min.js"></script><script defer src="https://uuuuu.cf/js/fishes.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CodeByZach/pace/themes/pink/pace-theme-bounce.css"><link rel="stylesheet" href="/css/title.css"><link rel="stylesheet" href="/css/aplayer.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.1/build/styles/default.min.css"><script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.1/build/highlight.min.js"></script><meta name="referrer" content="no-referrer-when-downgrade" /><link rel="stylesheet" href="/self/Kimbiedark.css"><meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="江畔独步寻花" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/banneravatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-Sand-Clock"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/pics/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-jiazaishibaitidaiicon"></i><span> 哔哩</span></a></div><div class="menus_item"><a class="site-page" href="/bilibili/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/bb/"><i class="fa-fw far fa-comment-dots"></i><span> 哔哔</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帳</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd0.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">江畔独步寻花</a></span><span id="weather-v2-plugin-simple"></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-Sand-Clock"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/pics/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw iconfont icon-jiazaishibaitidaiicon"></i><span> 哔哩</span></a></div><div class="menus_item"><a class="site-page" href="/bilibili/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></div><div class="menus_item"><a class="site-page" href="/artitalk/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/bb/"><i class="fa-fw far fa-comment-dots"></i><span> 哔哔</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友人帳</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">叛逆客户端及江湖命令收集</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-03T14:22:17.000Z" title="发表于 2022-06-03 22:22:17">2022-06-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-05T09:46:03.612Z" title="更新于 2022-06-05 17:46:03">2022-06-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">8.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>28分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2154245847.html#post-comment"><span id="twikoo-count"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="操作指南截至2-58版"><a href="#操作指南截至2-58版" class="headerlink" title="操作指南截至2.58版"></a>操作指南截至2.58版</h1><ul>
+<li><p>1.04:可以在登陆文件中定义自动载入的脚本和自动开启的功能。</p>
+</li>
+<li><p>1.08:当脚本的<code>Name</code>设为<code>$Name</code>,,<code>ID</code>设为<code>$ID</code>时,将会替换为当前登录的人物的名字和ID。</p>
+<pre><code>`#G`命令问题较多,已暂时删除。</code></pre>
+</li>
+<li><p>1.09:显示装备的装备状态。防卡改为60秒。显示私聊。</p>
+</li>
+<li><p>1.10:文字方式显示技能。人物的昏迷抽筋中毒发呆掉线打坐状态的显示。</p>
+</li>
+<li><p>1.16:可以自定义字体和背景颜色,可以在菜单手动设置也可以在登录文件中设置。即：在登陆文件<code>x-mud.exe</code>同文件夹下的<code>color.txt</code>文件。</p>
+</li>
+<li><p>1.22:在客户端中手动设定的颜色会被写入到登陆文件中。</p>
+</li>
+<li><p>1.23:记录功能。可以在登陆文件中设置,也可以手动打开。保存为ID-日期.txt文件。</p>
+</li>
+<li><p>1.24:技能列表显示。</p>
+</li>
+<li><p>1.25:双击弹出菜单。菜单的命令定义在<code>menu.txt</code>中。<code>menu.txt</code>须和<code>exe</code>文件放在一起。</p>
+</li>
+<li><p>1.30:加入静默模式。静默模式下不显示各种信息,但是可以正常触发和记录。可以在登陆文件中定义。</p>
+</li>
+<li><p>1.31:优先搜索各个列表中序号排前的项目,而不是场景中从上到下扫描。</p>
+</li>
+<li><p>1.32:静默模式时可以显示物品状态技能。</p>
+</li>
+<li><p>1.33:更换正则表达式引擎。</p>
+</li>
+<li><p>1.34:更换脚本读取方法。</p>
+</li>
+<li><p>1.36:恢复!Give命令。</p>
+</li>
+<li><p>1.37:<code>give @@ to xxx</code>不会给<code>Nosell</code>列表中的物品。<code>Nosell</code>列表支持正则表达式和通配符。<br>1.38:限制可能无限向服务器发送命令的指令,<code>!Give !Sell !Buy !Heal</code>只能同时进行一个。</p>
+</li>
+<li><p>1.39:<code>Explorer.exe</code>重新启动时重建托盘图标。</p>
+</li>
+<li><p>1.40:新增对象<code>@1~@n</code>,指向场景列表的第1到第n项。对技能按字母进行排序。</p>
+</li>
+<li><p>1.41:加入<code>--</code>对象的变形<code>-=</code>。<code>-=</code>对象在场景中从下往上搜索<code>Enemys</code>列表中的目标。</p>
+</li>
+<li><p>1.42:新命令<code>!exit</code>，用于关闭客户端。技能列表中用<code>*</code>标记组合的空手技能。</p>
+</li>
+<li><p>1.43:新命令<code>!Drop</code>，用于往柜子里扔东西，用法和<code>!Give</code>相同。<code>/get</code>命令可以直接拿柜子里的东西。</p>
+</li>
+<li><p>1.44:恢复<code>#G</code>命令。</p>
+</li>
+<li><p>1.45:加入<code>!buy</code>命令新用法,用于购买玩家出售的物品。格式:<code>!buy&lt;价格 物品名称,数量 或者 !buy&lt;=价格 物品名称,数量</code>。数量可以省略。名称需要全称,不能使用通配符。对非玩家使用这个格式的命令可能导致出错。</p>
+</li>
+<li><p>1.46:记录文件保存在新建的<code>log</code>目录下。直接打开客户端可以选择打开登录文件。</p>
+</li>
+<li><p>1.47:<code>!Load</code>命令,格式<code>!Load(脚本绝对路径或相对路径)</code>,脚本文件扩展名不能少,<code>L</code>为大写。</p>
+</li>
+<li><p>1.48:<code>!set</code>命令支持加减法。比如<code>!set var+5,!set var-6</code>。</p>
+</li>
+<li><p>1.49:加入命令<code>!Text</code>,格式为<code>!Text xxxx</code>,作用为添加内容到文本中,仅自己可见,可用于触发。修复脚本中可以使用<code>/t</code>命令。可以手动输入和脚本中相同格式的多个命令。</p>
+</li>
+<li><p>1.50:命令中可以使用<code>!set</code>的变量值,方法是把变量名用中括号括起来。例子:<code>!set 动作 practice;</code> <code>!set 参数 dodge;</code> <code>/[动作] [参数]</code>。</p>
+</li>
+<li><p>1.51:1.50更新的功能中,可以使用加减法。格式<code>[var1+var2]</code>或<code>[var1-var2]</code>。</p>
+</li>
+<li><p>1.52:加入列表<code>Seek</code>。格式如下面的例子,需要严格的正则表达式语法,不能使用简单的*?通配符,同时注意正则表达式的特殊字符。<br>在打开触发后,自动搜索列表中的文字,匹配以后把指定位置的数字储存在变量中,可以用<code>!set</code>查看或者通过<code>[var]</code>表达式在命令中使用。另外,变量名不能使用中文。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs [Seek]">Seek_NUM=10<br>Seek_1=此次战斗耗时[time]秒，获得[exp]点经验。<br>[Share_1]<br>Msg=此次战斗耗时*<br>Cmd=!set total [exp+total];/say 总共获得[total]经验;<br>Obj=;;<br>Tmr=500<br></code></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>1.53:<code>menu.txt</code>菜单支持中文描述,格式为 命令:描述。参考附带的<code>menu.txt</code>。</p>
+</li>
+<li><p>1.54:如果命令、触发、列表最前面为<code>R</code>,则标记为纯粹的正则表达式,不解析<code>*?</code>通配符。命令最前加上<code>R</code>标记则不解析set变量,解决命令中<code>[]</code>变量和正则表达式冲突问题.</p>
+</li>
+<li><p>1.55:加入记录开关<code>$r1</code>和<code>$r0</code>,分别是打开、关闭记录。记录开关时加入时间标记。</p>
+</li>
+<li><p>1.56:<code>!no</code>命令加入对列表的判断。可以是<code>!no @@,命令;</code>或者<code>!no --</code>,命令;,分别搜索<code>Goods</code>列表和<code>Enemys</code>列表.列表中所有对象都不存在才执行命令,并跳过后面的命令,如果有一个存在就执行后面的命令.<br>加入<code>!has</code>命令,用法和<code>!no</code>相同,但是判断方法相反.<br>加入命令<code>!if</code>,格式<code>!if aaa==bbb,命令;其他命令;</code> <code>==</code>代表相等,还可以是<code>&gt;</code>大于、<code>&gt;=</code>大于等于、<code>&lt;</code>小于、<code>&lt;=</code>小于等于、<code>!=</code>不等于,其中大于小于只用于数字。可以使用<code>[变量]</code>。条件成立则执行命令,并跳过后面的命令,否则执行后面的命令.</p>
+</li>
+<li><p>1.57:加入命令<code>!sset</code>,是<code>!set</code>的安静版,用法和<code>!set</code>相同,不同点在于<code>!sset</code>设置变量时不显示文字,仅进行变量的赋值.</p>
+</li>
+<li><p>1.58:加入机器人内部变量,用于显示一些游戏内部的信息,这些变量由下划线<em>开头,不能通过<code>!set</code>和<code>!sset</code>改变.<br>这些变量有<code>[_等级]</code>、<code>[_力量]</code>、<code>[_体质]</code>、<code>[_智慧]</code>、<code>[_敏捷]</code>、<code>[_场景]</code>、<code>[_加力]</code>.</em></p>
+</li>
+<li><p>1.59:<code>give</code>命令可以往柜子里丢东西.<br>时空位置加入使用回城卷轴.<br>加入内部变量<code>[_时间]、[_星期]</code></p>
+</li>
+<li><p>1.60:<code>!set</code>命令不再显示内部变量,<code>!sset</code>命令仍然可以显示,<code>!if</code>不受影响.</p>
+</li>
+<li><p>1.61:<code>[_时间]</code>格式改为<code>hhmmss</code>,精度约为3秒</p>
+</li>
+<li><p>1.62:双击菜单和直接输入的命令支持<code>$Name$ID$tie</code>,支持分号分开的多个命令.</p>
+</li>
+<li><p>1.63:加入内部变量<code>[_性别][_年龄][_声望][_脚本]</code>。加入特殊用途内部变量<code>[_EXP]</code>，如果在<code>Seek</code>中把<code>[_EXP]</code>作为捕获变量会把数值统计到经验中。</p>
+</li>
+<li><p>1.64:加入命令<code>!unset</code>,用于删除<code>!set</code>设定的变量。</p>
+</li>
+<li><p>1.65:<code>[变量]</code>支持递归,如<code>!set a b;!set b c;那么[[a]]==c</code>。新命令<code>!unsetall</code>,删除所有用户变量。</p>
+</li>
+<li><p>1.66:中括号变量中的计算支持直接数字,或者变量数字混合。<code>!set a [1+2];!set b [a-5]</code>。</p>
+</li>
+<li><p>1.67:加入<code>help</code>命令,可以查询一些命令的说明和用法,输入命令或按<code>F1</code>显示。支持查看师傅的技能，命令为<code>/skill</code></p>
+</li>
+<li><p>1.68:加入对登录文件进行简单加密的功能,在帮助菜单中选择。</p>
+</li>
+<li><p>1.69:客户端加入用代理服务器进行连接功能。具体方法为在登录文件中设置 代理、代理端口、代理用户名、代理密码  参数。代理用户名和密码没有可省略。目前貌似只支持<code>socks5</code>。</p>
+</li>
+<li><p>1.70:加入命令<code>#n</code>,<code>n</code>是数字。作用为暂停发送命令<code>n</code>毫秒。暂停可以被其他触发打断。手动输入或用批量管理工具发送该命令可能导致客户端假死。<br>更多帮助查阅客户端内建的帮助文件。</p>
+</li>
+<li><p>2.00:加入弹出菜单。柜子内的物品不再显示在场景中。原来的双击菜单改为右键菜单。颜色改为<code>color.txt</code>中定义。</p>
+</li>
+<li><p>2.01:1.恢复命令<code>!Click(n)</code>和<code>!Click(x,y)</code>,前一个为点击菜单第<code>n</code>个,后面为点击菜单<code>x,y</code>坐标的项。<code>x</code>坐标一般要大于<code>15</code>小于<code>210</code>，<code>y</code>坐标<code>40-55</code>为第一项，<code>56-71</code>为第二项，以此类推。<br>2.恢复!Num命令,格式!Num数字,用途为在!Click命令导致的数字输入框弹出以前指定数字框的数值。</p>
+</li>
+<li><p>2.02:新命令<code>!Tip</code>,格式<code>!Tip 内容</code>,在托盘中弹出气泡提示。</p>
+</li>
+<li><p>2.03:加入自动寻路命令<code>!go</code>,作用为在地图任何地点都能自动寻路到指定场景。路径文件在登录文件中定义 <code>寻路=路径文件名</code>,可以用专门的路径录制客户端录制。寻路分区的优先级为最低,即可以被公共分区和任何其他分区打断,被公共分区打断可以继续走路。对于Name1和出口名字不一样的地点,出口的格式为Outn=真实名字:出口名字</p>
+</li>
+<li><p>2.04:寻路路径文件中可自定义命令,并支持多个分号分开的命令,以达到一些特殊的场景。解决地名相同的场景的寻路问题。屏蔽血雨争锋区路径文件中一些危险或者平时不好到达的场景，修正一些路径错误。寻路完成后提示到达。优化寻路算法的内存占用。</p>
+</li>
+<li><p>2.05:寻路支持银月时空等飞的道具,自动检测身上是否带有物品。在路径文件中设置,格式见血雨争锋的路径。暂不支持<code>$tie</code>通配符。</p>
+</li>
+<li><p>2.06:向师傅请教技能时可以显示技能名字了。调整给物品时的物品顺序。增加法术的描述。去除准备技能时的不正确技能。</p>
+</li>
+<li><p>2.07:按住<code>Ctrl</code>键滚动滚轮可以调整对话框大小。窗口大小可自由调整,窗口控件跟着移动。</p>
+</li>
+<li><p>2.08:寻路命令加入新用法。<code>!go&gt;地名</code>。用途为屏蔽时空银月等公共出口，一般用于没<code>mp</code>用时空时。中间没有空格。更新血雨争锋区的路径。</p>
+</li>
+<li><p>2.09:修复使用批量管理工具可能导致的客户端崩溃。增加帮助文件的内容。更新血雨争锋区的路径。删除古墓和日月任务的经验统计,古墓任务需要统计经验需要在脚本里设置<code>seek[_EXP]</code>。</p>
+</li>
+<li><p>2.10:恢复命令<code>$o0</code>和<code>$o1</code>,作用分别是关闭和开启防掉。登录文件加密方法改进。</p>
+</li>
+<li><p>2.11:新命令<code>!outN</code>,<code>N</code>可以是<code>1~n</code>,作用是模拟点击第<code>n</code>个出口,如不带<code>N</code>则随机选择出口。加入特殊内部变量<code>[_随机]</code>产生一个<code>0-9999</code>的随机数。</p>
+</li>
+<li><p>2.12:当触发的<code>Tmr=0</code>时,触发命令会马上执行,但命令中间可能被打断。<br>加入<code>[变量]</code>中的字符串处理函数,<code>substr、len、find</code>。<br>①<code>substr</code>，截取子字符串。格式<code>[substr(字符串,开始位置,长度)]</code>,举例:<code>[substr(abcde,2,2)]</code>,结果为<code>cd</code>。<br>②<code>len</code>,计算字符串的长度。格式<code>[len(字符串)]</code>,举例:<code>[len(abcd)]</code>,结果为<code>4</code>。<br>③<code>find</code>,在一个字符串中查找另一个字符串的位置。格式<code>[find(原字符串,查找字符串,开始位置)]</code>,开始位置可以省略,省略默认为0。举例:<code>[find(abcdebcde,bc)]</code>,结果为<code>1</code>，<code>[find(abcdebcde,bc,2)]</code>,结果为<code>5</code>。</p>
+</li>
+<li><p>2.13:加入列表<code>Notar</code>，作用为在搜索<code>@@，@E，--</code>列表对象的时候排除Notar列表里的，支持通配符、正则表达式、<code>$Name$ID</code>。<br>示例:</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br></pre></td><td class="code"><pre><code class="hljs [Notar]">  Notar_num=99<br>  Notar_1=断掉的*<br><br>- 2.14:加入命令`!Addlist`和`!Dellist`作用为动态增加、删除脚本中的列表，格式`!Addlist(列表名,值)`和`!Dellist(列表名,值)`。支持`Seek、Enemys、Fight_room、Follow、Wupin、Nosell、Goods、Notar`。<br><br>- 2.15:加入命令`@Re`。功能为重复上一个命令。<br><br>- 2.16:`@Re`命令增加重复前一个`obj`。`@Re`屏蔽手动输入的命令、防卡命令。屏蔽`esc`关闭客户端。<br>  加入打开触发命令`$t1`<br>  加入预处理命令列表`PreCmd`，作用为载入脚本以后自动发送列表中的命令。<br>  格式:<br>  ```[PreCmd]<br>  PreCmd_Num=数量<br>  PreCmd_Delay=载入脚本和发送命令之间的间隔,单位毫秒<br>  PreCmd_1=命令1<br>  PreCmd_2=命令2<br>  PreCmd_3=命令3<br>  …<br><br>- 2.17:`!has`和`!no`命令支持`@E`;<br>  `give`命令加入给`Nosell`列表物品格式:`give nosell to 目标`<br>  `get`命令增加目标`#0`，从场景中拿东西<br>  `use`命令增加目标`#$ID`和`#0`，都能对玩家自己使用物品<br><br>- 2.18:增加触发文字中支持`[变量]`，语句前面要用` V@` 做标记。<br>  示例:<br>  `Msg=V@你设置环境变量：a 为 [b]`。<br><br>- 2.19:脚本中设置`Hotkey`时`key`可以使用按键的名称。支持`A-Z`,`F1-F12`,`Num0-Num9`(代表小键盘0-9),`Left或←,Right或→,Up或↑,Down或↓,End,Home,Pageup,PageDown`。<br>  示例：<br>  ```[Hotkey_1]<br>  Key=F1<br>  Cmd=/get;<br>  Obj=;<br><br>加入内部变量`_mp、_maxmp、_hp、_effhp、_maxhp`。<br><br>PreCmd中支持快速设置变量。支持改变下划线`_`开头的变量。<br>示例：<br>`PreCmd_1=_变量:set看不到`<br><br>- 2.20:加入变量函数`count`，统计身上物品的数量，参数为物品名，可以带通配符。示例：`[count(金币)]`<br>  加入变量函数`skill`，返回技能等级，参数为技能名。示例：`[skill(基本躲闪)]`、`[skill(dodge)]`<br>  加入变量函数`enabled`，查询准备在基本上的高级。示例：`[enabled(force)]`<br><br>- 2.21:加入变量函数teamcount，返回战斗中指定队伍的人数或物品数，参数为0或1或-1，分别指战队0战队1和其他。示例：[teamcount(1)]<br><br>- 2.22:加入变量函数`difftime`，格式`[difftime(时间1,时间2,s)]`，计算从时间1到时间2的秒数，如需要计算相差的分钟数，格式是`[difftime(时间1,时间2,m)]`,可跨天，时间格式为`[_时间]`的格式。示例：`[difftime(083001,131500,s)]`<br>  加入变量函数`addtime`，格式`[addtime(时间,秒数)]`，返回时间加秒数后的值。示例`[addtime(230000,7200)]`<br>  加入队长模式开关`$p1`和`$p0`<br><br>- 2.23:`Seek`加入命令。作用为`Seek`触发以后发送这些命令，不会拦截其他触发。格式`Seek_NCmd=命令`。<br>  示例：<br>  ```[Seek]<br>  Seek_Num=2<br>  Seek_1=你的临济庄运行完毕，将内力收回丹田。<br>  Seek_1Cmd=!sset 激励 0<br>  Seek_2=你微一凝神，运起临济庄，一声娇喝！<br>  Seek_2Cmd=!sset 激励 1<br><br>- 2.24:可以观察容貌。可以私聊。脚本一行支持`512`字符。<br><br>- 2.25:`!if`增加格式`!if&gt;表达式,命令1;命令2;`。作用为即使满足表达式执行命令1后也继续执行后面的命令。<br>  将用西文逗号隔开的变量看作数组。<br>  `[变量]`函数`at`,格式`[at(数组,序号)]`，取出数组的第序号个元素。序号从`1`开始。<br>  函数`indexOf`,格式`[indexof(数组,元素)]`查找元素在数组中的序号。无法找到返回-1。<br>  函数`size`，格式`[size(数组)]`返回数组的大小。<br>  示例：<br><br>  ```有一数组id = 111,222,333,444,555，代表几个号的id，要求前一个号把自己的id私聊给下一个号。<br>  Cmd=!sset i [indexof([id],$ID)];!if [i]==-1,!Text 错误;!sset i+1;!if&gt;[i]&gt;[size([id])],!sset i 1;/t [at([id],[i])];/tell $ID;<br><br>函数`insert`，格式`[insert(数组,位置,元素)]`返回一个数组，为原数组在位置处添加了元素后的结果。第一个元素前面的位置为`0`。示例<br><br>```[insert([id],2,666)]，结果为111,222,666,333,444,555```<br>函数`remove`，格式`[remove(数组,序号)]`返回一个数组，为原数组移除第序号个元素后的结果。示例`[remove([id],4)]，结果为111,222,333,555`<br><br>- 2.26:加入命令`!t`，选择目标，和`/t`不同之处在于不能搜索列表`@@--`等列表，不能选择场景、自己和好友，可以搜索名字和`ID`，且可以使用统配符和正则表达式。<br>  时空按钮支持`Transobj`含有通配符和正则表达式。<br>  为防止`!Give`刷屏，一次`!Give`命令中，每堆物品最多给一次。<br><br>- 2.27:寻路命令`!go`加入`mp`判断，设置在寻路文件的公共出口下，只有大于等于设定的`mp`，才会使用公共出口。另：如因飞时空`mp`不会刷新，所以连续飞是无法判断的。<br><br>- 2.28:`[teamcount()]`不带参数返回玩家当前的队伍。不在战斗或观战是`-1`。<br>  加入内部变量`[_负重]`储存负重的千分比。<br><br>- 2.29:加入变量函数`equip`判断物品是否装备着。格式`[equip(物品ID)]`。没有物品返回`-1`，没有装备返回`0`，否则返回物品装备的位置：`1=头盔,2=左耳,3=右耳,4=耳环,5=颈,6=左手,7=右手,8=手,9=左腕,10=右腕,11=手腕,12=铠甲,13=腰带,14=靴子,15=斗篷,16=手套,17=双手,18=指环,19=衣服`<br>  `[count()]`支持物品`ID`。<br>  扩展`!t`命令，格式`!t 物品ID名字,命令;其他命令;`如果`!t`能选到物品，则发送命令，忽略后面的命令。<br>  `!Addlist`和`!Dellist`支持数组批量增加和删除。<br><br>- 2.30:加入三元运算符，格式`[表达式?值1:值2]`表达式为含有`==`或`!=`或`&gt;=`或`&gt;`或`&lt;=`或`&lt;`的比较表达式,表达式满足结果是值`1`，不满足结果是值`2`。例：<br><br>  `[[a]&gt;[b]?[a]:[b]]，获取a和b中较大的那个`。<br>  `SeekCmd`不会被`@Re`记录。<br>  `equip`加入查询装备位置的物品`id`。如`[equip(7)]`返回右手武器的`id`，没有装备则为空。<br>  变量函数`max`和`min`，格式`[max(数组)][min(数组)]`，返回数组中最大和最小的数。<br>  变量`[_follow]`，检测队友到场的数量。队友为脚本中`Follow`列表定义。检测方法和队长模式相同。<br>  加入命令`!R XXX`。作用为将`XXX`内容写到记录中，没有开启记录会暂时打开记录。<br>  示例：<br><br>  ```Seek_1=【表决】$Name\($ID\)投票关闭.*\([id]\)的闲聊频道，需要20票通过，还差.*票！<br>  Seek_1Cmd=!R 被[id]攻击了。;<br>  Seek_2=你押镖成功，获得了[exp]经验<br>  Seek_2Cmd=!R 押镖成功，获得[exp]经验;<br><br>- 2.31:加入循环命令`!for`，格式`!for次数,命令1:命令2:……`。后面用`冒号`隔开多个命令发送次数次。新的触发会打断执行。命令间的延时为触发的`Tmr`。<br>  加入列表`Filter`。内容为含通配符或正则表达式的文字。作用为过滤符合文字，不会显示在窗口中，不会记录，不会触发。在脚本调试版中可以看到哪些文字被过滤。<br>  示例:<br><br>  ```[Filter]<br>  Filter_Num=2<br>  Filter_1=【谣言】*<br>  Filter_2=*\(*\)拍着张居正的肩膀，笑得嘴都合不起来了。<br></code></pre></td></tr></tbody></table></figure>
+
+<p>第一个为过滤谣言频道，第二个为过滤不是自己拍肩膀的表情。</p>
+</li>
+<li><p>2.32:<code>!if</code>和三元运算符的判断语句支持<code>&amp;&amp;</code>和<code>||</code>，分别是<code>且</code>和<code>或</code>。且是两个条件都满足，才判断为真，或是其中一个满足就判断为真。示例</p>
+<p><code>1:!if [_星期]==5&amp;&amp;[_时间]&gt;150000,!exit  示例2:!if [_mp]&lt;300||[_hp]&lt;2000,!set 状态 去睡觉</code><br><code>teamcount</code>在非战斗中如果目标是战斗，可以显示战队中的人数，无法显示观战人数。<br>修正暗器使用时装备位置显示错误。2.33:命令<code>!ping</code>，用于测试延迟。两次ping之间需间隔<code>1</code>秒。<br><code>!Click</code>加入新用法，<code>!Click(快捷按钮的名称)</code>。作用为模拟点击这个按钮。<br>修复许多导致崩溃的bug。</p>
+</li>
+<li><p>2.34:战斗中，<code>@1</code>指向其他位置第一个，<code>@2</code>指向第二个<br><code>[变量]</code>函数<code>has</code>，格式<code>[has(物品|数量)]</code>或<code>[has(物品)]</code>，和<code>!has</code>逗号前的参数相同，找到物品值是<code>1</code>，找不到值是<code>0</code>。</p>
+</li>
+<li><p>2.35:加入载入寻路路径文件命令<code>!loadroom</code>。格式<code>!loadroom(路径文件名)</code>。<br>加入施法命令<code>!c</code>或<code>!cast</code>。可以用名称或者法术名字的一部分来施法。比如<code>!c recover</code>或<code>!cast 散</code>。<br>菜单点击施法和<code>!cast</code>施法优先施放基本招架上的技能。<br>加入表情命令<code>!:D</code>，是<code>/:D</code>的内部版本，效果差不多。</p>
+</li>
+<li><p>2.36:加入<code>[变量]</code>函数<code>range</code>，格式<code>[range(起始,结束)]</code>或<code>[range(起始,结束,步长)]</code>，生成一个数列。比如<code>[range(1,11,2)]</code>生成<code>1,3,5,7,9,11</code><br><code>!for</code>命令加入遍历数组的功能，格式<code>!for 变量名 in 数组,命令1:命令2:…</code>。例子：<code>!sset a [range(1,5)];!for x in a,!Text [x]</code><br><code>!for</code>循环自然完成时加入提示。</p>
+</li>
+<li><p>2.37:对请教界面和买东西界面菜单进行排序。<br><code>!buy</code>命令支持通配符和正则表达式以及<code>Goods</code>列表（使用<code>@@</code>做物品名)。</p>
+</li>
+<li><p>2.38:提高计算经验和防卡时间精度，防止电脑时钟不准确导致计算问题。<br>触发关闭时不显示防卡信息。<br>补充大量帮助信息。</p>
+</li>
+<li><p>2.39:加入命令<code>@goto</code>，格式<code>@goto(触发名)</code>，作用为直接跳转到那个触发，执行触发的命令。例如:<code>@goto(Share_1)</code>，<code>@goto(Triger5_2)</code>。跳转到另一个分区的触发时，默认当作也触发那个分区。跳转的间隔是触发的<code>Tmr</code>参数，也可被其他触发打断。触发名不分大小写。<code>@goto</code>命令后面如有其他命令，全部忽略。<br>效率计算时间返回低精度，以免可变频<code>CPU</code>导致时间计算错误。</p>
+</li>
+<li><p>2.40:<code>!unset</code>支持通配符和正则表达式，用于批量删除变量。<br>加入变量<code>[_中毒]</code>，中毒时这个值为<code>1</code>，未中毒时为空。</p>
+</li>
+<li><p>2.41:加入保存变量功能，需要在登陆文件中打开开关，格式为 保存变量=开 。内容保存在<code>vars[登录文件名].txt</code>中。<em>不保存下划线_开头的变量</em>。</p>
+</li>
+<li><p>2.42:加入本地私聊命令<code>!tell</code>。格式为<code>!tell ID,内容</code>。只能发送给在同一个系统下其他号。特点是没延迟，内容可以重复。</p>
+</li>
+<li><p>2.43:<code>!for</code>命令支持<code>!if</code>下面含有特殊的<code>break</code>指令，作用为打断循环。例子:<code>!for100,!set i+1:!if [i]&gt;=50,break</code><br>加入命令前缀<code>NP@</code>，作用为该命令不会进行变量替换。<br>加入宏的功能。方法为设置格式像函数的变量，相当于自定义函数，用<code>[函数名(变量列表)]</code>调用。例子1:<code>NP@!set 报数(x) !Text 一共完成了[x]次;[报数(n)]</code>;。例子2:<code>NP@!set sum(a,b,c,d) [[[a+b]+c]+d];!Text [sum(1,2,3,4)]</code>;。如果有多个名称相同参数数量相同的宏，可能会出现错误。如果由名称相同参数数量不同得宏会优先选择调用时参数数量相同的宏。</p>
+</li>
+<li><p>2.44:加入秒表功能，精度约<code>35</code>毫秒，会临时接管效率统计中的时间一栏用于显示，不影响效率统计。同一时间只能有一个秒表存在，后启动的秒表会覆盖前面的。启动命令为<code>!Alarm</code>(不区分大小写)，格式<code>!alarm 时间,模式</code>。时间单位为秒，可以是小数，最多不能超过<code>49</code>天。模式分为两个字，第一个字表示秒表是往上增加还是往下减小，分别用<code>+</code>和<code>-</code>表示。第二个字表示结束时提醒的方式，分为文字提醒<code>A</code>，弹出窗口提醒<code>M</code>，任务栏图标提醒<code>T</code>，声音提醒<code>S</code>，默认无提醒。示例1:<code>!Alarm 10,+A</code>  示例2:<code>!Alarm 600,-M</code><br>限制<code>!fo</code>r命令中有服务器命令时过快。</p>
+</li>
+<li><p>2.45:加入公共脚本功能，即多个脚本相同的部分写在一起，作为公共部分。公共脚本载入在主脚本之后，即会覆盖<code>setting</code>的内容，列表项目会加到后面，如果有相同的触发，会优先触发主脚本。公共脚本中也可以定义公共脚本。公共脚本和主脚本需放在一个目录下。<br>格式：<br><code>[Setting]</code><br><code>ShareScript=脚本名.ini</code></p>
+</li>
+</ul>
+<p>补充说明：公共脚本中不宜使用<code>@goto</code>，因为<code>@goto</code>的触发名是优先判断主脚本的触发名字，除非触发名不重复。<br><code>TrigerSet</code>是一个整体，不能把其中一个<code>Triger</code>提出来。<br><code>QuickButton</code>只显示主脚本的。</p>
+<p>修正编辑脚本会打开主脚本和所有公共脚本。</p>
+<ul>
+<li><p>2.46:加入统计场景物品数量的变量函数 <code>[ecount(参数)]</code>和<code>count</code>用法相同，参数为物品名，可以带通配符。<code>ecount</code>统计不包括玩家自己。<br>修正<code>count</code>不能使用通配符的问题。修正<code>count</code>自动在末尾加星号的问题。</p>
+</li>
+<li><p>2.47:加入查看在线玩家功能。<br>加入聊天频道功能。注意：设置聊天频道以后如果脚本或输入命令非服务器或机器人命令，将默认作为聊天内容发送。</p>
+</li>
+<li><p>2.48:加入对没有名字的技能的检查。精简寻路成功的提示。</p>
+</li>
+<li><p>2.49:加入统一动作的功能，暂且叫领队模式。开启方法，控制的号使用<code>!lead id1,id2,id3……</code>命令，设定跟随动作的<code>id</code>列表。设定完成后，该号通过输入或者点击菜单发送的命令（包括触发、循环开关，载入脚本、重载脚本动作，不支持脚本触发的动作），其他号会同时进行动作，控制号选中自己时，被控制号也会选中自己，命令中含有<code>$ID</code>和<code>$Name</code>也会相应替换。取消命令为<code>!lead none</code>。被控制的<code>id</code>客户端最小支持版本号<code>2.49</code>，小于该版本号无法通过点击选择目标，对话菜单部分选项无效。<br>支持批量工具或者私聊命令中含有<code>$Name</code>和<code>$ID</code>。<br>技巧：连续的<code>id</code>可以配合<code>[变量]</code>函数<code>range</code>使用。</p>
+</li>
+<li><p>2.50:<br>1、变量函数支持面向对象写法，对以前所有函数及以后的函数甚至自定义宏都起作用。<br>格式：<code>[变量.函数(参数)]</code>或者<code>[[变量].函数(参数)]</code>。效果等同于<code>[函数([变量],参数)]</code>。<br>并支持递归，<code>[变量.函数1(参数1).函数2(参数2).函数3(参数3)...函数n(参数n)]</code>。<br>举例：</p>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c">Cmd=!<span class="hljs-built_in">set</span> s abcefghi;!Text [s.substr([s.find(e)],<span class="hljs-number">3</span>)]<br>Cmd=!<span class="hljs-built_in">set</span> s <span class="hljs-number">1</span>,<span class="hljs-number">23</span>,<span class="hljs-number">345</span>,<span class="hljs-number">6789</span>,<span class="hljs-number">90123</span>;!Text [s.at(<span class="hljs-number">4</span>).len()]<br></code></pre></td></tr></tbody></table></figure>
+
+
+
+</li>
+</ul>
+<p>2、变量数组中，如果含有 <code>键:值</code> 类型的元素可以被视为字典。不能使用数字作为键。<br><code>at</code>函数可以根据键在字典中查找值。<br>举例:<br><code>Cmd=!set s a:1,b:2,c:3;!Text [s.at(c)];</code><br>或<br><code>Cmd=!set s a:1,b:2,c:3;!Text [at([s],c)];</code></p>
+<p>3、新数组函数<code>setat</code>，将指定位置的数组元素值设定为新值。<br>格式：<code>[setat([数组],位置,新值)]</code>或<code>[数组.setat(位置,新值)]</code>。<br>下面不作说明，所有函数都有这两种调用方法。<br>位置如果是数字，将数组视为普通数组，整个替换位置处的值，位置从<code>1</code>开始。<br>位置如果是文字，将数组视为字典，通过查找字典的键，将值替换为新值。如果未查找到原来有这个键，将插入一个新键:值。<br>举例:</p>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c">Cmd=!<span class="hljs-built_in">set</span> s <span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>;!Text [s.setat(<span class="hljs-number">3</span>,<span class="hljs-number">999</span>)];<br>Cmd=!<span class="hljs-built_in">set</span> s a:<span class="hljs-number">1</span>,b:<span class="hljs-number">2</span>,c:<span class="hljs-number">3</span>,d:<span class="hljs-number">4</span>;!Text [s.setat(c,<span class="hljs-number">999</span>)];!Text [s.setat(z,<span class="hljs-number">888</span>)];<br></code></pre></td></tr></tbody></table></figure>
+
+<p>4、<code>!set</code>和<code>!sset</code>支持设置数组或字典内部元素值。<br>格式：<code>!set 数组.at(位置) 新值</code><br>相当于<code>!set 数组 [setat([数组],位置,新值)]</code></p>
+<p>5、新函数<code>key</code>和<code>value</code>，参数是形式 <code>键:值</code> 的字符串，<code>key</code>为提取键，<code>value</code>为提取值。<br><code>Cmd=!set a 等级:16;!Text [a.key()];!Text [a.value()];</code><br>6、新函数<code>keys</code>和<code>values</code>，参数是字典，<code>keys</code>将字典中所有元素的键提取，组成一个数组，<code>values</code>将字典中所有元素的值提取，组成一个数组。并且可以配合<code>!for in</code>格式使用。<br>举例:</p>
+<figure class="highlight c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c">Cmd=!<span class="hljs-built_in">set</span> s 大米:<span class="hljs-number">20</span>,小米:<span class="hljs-number">30</span>,玉米:<span class="hljs-number">40</span>;!Text [s.keys()];!Text [s.values()];<br>Cmd=!<span class="hljs-built_in">set</span> s 大米:<span class="hljs-number">20</span>,小米:<span class="hljs-number">30</span>,玉米:<span class="hljs-number">40</span>;!<span class="hljs-keyword">for</span> x in s.keys(),!Text [x];<br></code></pre></td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><p>2.51:加入特殊变量<code>[_alarm]</code>，显示<code>!alarm</code>命令剩余的秒数。</p>
+</li>
+<li><p>2.52:配合新版批量管理工具，显示对话菜单功能。</p>
+</li>
+<li><p>2.53:1、<code>!_where</code>命令。<br>2、内部变量增加一个<code>[_目标]</code>存储当前选中目标的ID。<br>3、变量函数<code>[status()]</code>可以无参数，参数可以是<code>#1~#8</code>，<code>@@</code>或者<code>id</code>等，战斗中返回当前目标的状态百分数。</p>
+</li>
+<li><p>2.54:<code>!Num</code>命令格式修正，<code>!Num</code>文字。现在可以是任何文字了，以前只能是数字。<br>配合新版批量管理工具，能够在远程管理时对话框输入数字文字。</p>
+</li>
+<li><p>2.55:整合调试版功能。开关为登陆文件中定义 <code>调试=开</code></p>
+</li>
+<li><p>2.56:加入内部变量<code>[_skills]</code>，显示玩家技能的数组。</p>
+</li>
+</ul>
+<p>加入控制对话框的命令。<code>@clearmenu</code>、<code>@settitle(文字)</code>、<code>@addmenu(文字,命令)</code>、<code>@showmenu</code>。<br><code>@clearmenu</code>:清空原来的对话框<br><code>@settitle(文字)</code>:设置对话框的标题<br><code>@addmenu(文字,命令)</code>:添加对话框项目，命令只支持一个，空的命令是返回<br><code>@showmenu</code>:添加完成后，刷新显示</p>
+<ul>
+<li><p>2.57:增加文字显示框可以点击的功能，需要文字格式：<code>其他文字{可点击文字|命令}其他文字</code>。命令可以是用冒号分开的多个命令。支持<code>!Text</code>产生的文字和服务器发送来的文字。<br>比如：<code>是否进入？{确定|/yes},{不要|/no}</code><br>颜色暂时没办法改变。</p>
+</li>
+<li><p>2.58:<code>[enabled(技能名)]</code>变量函数支持高级技能反查基本技能名称。<br>新增<code>[canenable(技能名)]</code>变量函数。查询可以准备到基本技能上的高级技能或者查询高级技能可以准备的基本技能。返回数组。<br>新增<code>[skillname(技能名)]</code>变量函数。查询技能的中文名称。<br>新增<code>[magic(技能名)]</code>变量函数。查询技能拥有的法术。返回数组。<br>新增<code>[magicname(法术名)]</code>变量函数。查询法术的中文名称。</p>
+</li>
+<li><p>2.59:各项数据支持64位数据。</p>
+</li>
+</ul>
+<h1 id="认证版"><a href="#认证版" class="headerlink" title="认证版"></a>认证版</h1><p>认证版和普通版的区别:</p>
+<ol>
+<li><p>随机内网<code>ip</code></p>
+</li>
+<li><p>战斗时显示对方的<code>mp</code></p>
+</li>
+<li><p>战斗时估算对方的<code>hp</code>(不准确)</p>
+</li>
+<li><p>标记戴着人皮面具伪装成的<code>npc</code></p>
+</li>
+<li><p>可以看到<code>npc</code>对话中的命令</p>
+</li>
+<li><p>买东西时可以看到物品的序号</p>
+</li>
+<li><p><code>Seek</code>可以捕获任何文字,不只是数字</p>
+</li>
+<li><p><code>!moveto</code>命令,可以调整场景中物品玩家的显示顺序<code>!moveto n</code>.如果<code>n</code>小于<code>1</code>,则删除显示</p>
+</li>
+<li><p>重连命令<code>@Reconnect</code></p>
+</li>
+<li><p>变量运算支持乘除求余,运算符分别是<code>* / %</code></p>
+</li>
+<li><p><code>!_go</code>命令 可以使用场景显示的地名而不是场景真实名字</p>
+</li>
+<li><p>集群命令<code>!(命令1,命令2,命令3…,命令n)</code> 打包所有命令一起发送给服务器</p>
+</li>
+<li><p>特殊内部变量<code>[_randomRoom]</code>随机返回寻路文件中的一个可以寻路到达的场景名称</p>
+</li>
+<li><p>内部变量<code>[__目标]</code>显示目标的<code>Longid</code>，内部变量<code>[__场景]</code>显示当前场景的真实地名。</p>
+</li>
+<li><p>以<code>@</code>开头的命令将无视目标</p>
+</li>
+<li><p>内部变量显示特定名字<code>id</code>对象的<code>Longid</code>。<code>[user@@][user@名字][user#ID]</code>用于查找玩家身上的物品。<code>[env@@][env@名字][env#ID]</code>用于查找场景里的物品。</p>
+</li>
+<li><p><code>[user@@][user@名字][user#ID][env@@][env@名字][env#ID]</code>增加参数，如<code>[user@名字~2]</code>表示符合名字的第二个物品。序号超过符合条件的物品则返回最后一个。</p>
+</li>
+<li><p>列表<code>killer</code>,用于在<code>#1~#4</code>选择目标的时候如果战斗中有列表中出现的<code>id</code>时优先选择。如需识别戴面具的需要先将其加为好友。</p>
+</li>
+<li><p><code>[变量]</code>函数<code>cnum</code>，作用为将中文表示的数字转化为阿拉伯数字,支持十万以下的数字。如:<code>[cnum(一千二百三十四)]</code></p>
+</li>
+<li><p>命令<code>@SavePath 目标地名</code>。把寻路结果以脚本格式写入文件<code>\temp.txt</code>中。</p>
+</li>
+<li><p>命令<code>@timer 毫秒</code>，用于设置<code>[_时间]</code>的精度。</p>
+</li>
+<li><p>在路径文件中做标记,<code>标记=1</code>，标记可以是任意文字，用<code>[nearest(标记,场景名)]</code>,场景名省略默认是当前场景,可以寻找离这个场景最近的有标记的场景。比如标记所有休息场景<code>sleep=1</code>，用<code>[nearest(sleep)]</code>可以寻找离人物最近的休息点。</p>
+</li>
+<li><p>临时标记场景数据的命令<code>!roomdata(场景名,标记,值)</code></p>
+</li>
+<li><p>变量函数<code>[text()]</code>无参数，返回当前选择行的文字。为避免冲突，文字中如果含有英文的括号<code>“()”逗号“,”\</code>都会以中文的替代</p>
+</li>
+<li><p>变量<code>[_doors]</code>返回所有出口的数组。</p>
+</li>
+<li><p>变量函数<code>team</code>，参数为<code>0</code>或<code>1</code>或<code>-1</code>，返回战队中<code>npc</code>或玩家名字的数组。在战斗外目标是战斗也能获取。战斗外不能获取观战列表。</p>
+</li>
+<li><p>变量函数<code>replace</code>，格式<code>[replace(原字符串,被替换字符串,新字符串)]</code>，作用为替换原字符串中所有被替换字符串为新字符串。原字符串可以是数组。如被替换字符串或新字符串中含有逗号，需要用引号引起来。示例:<code>[replace(123,234,345,",",|)]</code>，结果是<code>123|234|345</code>。</p>
+</li>
+<li><p>2.373版本加入更精确计时<code>[__时间]</code>，为程序开启后经历的秒数，精度<code>1</code>毫秒。配合<code>@timer</code>使用。</p>
+</li>
+<li><p>测定两个场景之间的距离函数<code>[distance(场景1,场景2)]</code></p>
+</li>
+<li><p>取当前场景出口场景真实名字的函数<code>[doorname(序号)]</code>，序号从<code>1</code>开始</p>
+</li>
+<li><p>控制另外的号的命令 <code>!Rcmd ID,命令</code>。号需要在同一系统下。</p>
+</li>
+<li><p>当前场景栏有多少行的变量：<code>[_row]</code>.</p>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Masterguo</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://guodxsmd.github.io/2154245847.html">https://guodxsmd.github.io/2154245847.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://guodxsmd.github.io" target="_blank">江畔独步寻花</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd0.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/friendswechat.png" target="_blank"><img class="post-qr-code-img" src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/friendswechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/friendsalipay.jpg" target="_blank"><img class="post-qr-code-img" src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/friendsalipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/459464003.html"><img class="next-cover" src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd47.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">重出江湖新手指南第六版</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/banneravatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Masterguo</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/guodxsmd"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/guodxsmd" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ghostsnow8023@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://www.facebook.com/mstguo/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a><a class="social-icon" href="https://twitter.com/Masterguoboo" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">東邊日出西邊雨 '<div id="weather-v2-plugin-standard"></div>'</div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="card-content"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97%E6%88%AA%E8%87%B32-58%E7%89%88"><span class="toc-text">操作指南截至2.58版</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A4%E8%AF%81%E7%89%88"><span class="toc-text">认证版</span></a></li></ol></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2154245847.html" title="叛逆客户端及江湖命令收集"><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd0.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="叛逆客户端及江湖命令收集"/></a><div class="content"><a class="title" href="/2154245847.html" title="叛逆客户端及江湖命令收集">叛逆客户端及江湖命令收集</a><time datetime="2022-06-03T14:22:17.000Z" title="发表于 2022-06-03 22:22:17">2022-06-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/459464003.html" title="重出江湖新手指南第六版"><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd47.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="重出江湖新手指南第六版"/></a><div class="content"><a class="title" href="/459464003.html" title="重出江湖新手指南第六版">重出江湖新手指南第六版</a><time datetime="2022-06-02T06:43:04.000Z" title="发表于 2022-06-02 14:43:04">2022-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/4136000161.html" title="MarkDown语法学习记录"><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd28.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MarkDown语法学习记录"/></a><div class="content"><a class="title" href="/4136000161.html" title="MarkDown语法学习记录">MarkDown语法学习记录</a><time datetime="2020-12-28T13:44:15.000Z" title="发表于 2020-12-28 21:44:15">2020-12-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2004124661.html" title="butterfly特效篇"><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd35.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly特效篇"/></a><div class="content"><a class="title" href="/2004124661.html" title="butterfly特效篇">butterfly特效篇</a><time datetime="2020-12-16T16:40:44.000Z" title="发表于 2020-12-17 00:40:44">2020-12-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/1143428660.html" title="butterfly主题增加可互动的看板娘"><img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/fategd49.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题增加可互动的看板娘"/></a><div class="content"><a class="title" href="/1143428660.html" title="butterfly主题增加可互动的看板娘">butterfly主题增加可互动的看板娘</a><time datetime="2020-12-16T14:43:07.000Z" title="发表于 2020-12-16 22:43:07">2020-12-16</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By Masterguo</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">一点浩然气，千里<a target="_blank" rel="noopener" href="https://allengg.cn/">快哉风</a>!<br>　<img src="https://allengg-1258494402.cos.ap-beijing.myqcloud.com/testicp.png"><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010502004821">豫公网安备 41010502004821号</a>  <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn">豫ICP备2021000052号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init({
+      envId: 'allengg-2gpanvnra711aa19',
+      el: '#twikoo-wrap'
+    })
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'allengg-2gpanvnra711aa19',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'QTIUhS2jl04YRMFW5hM3WlCu-MdYXbMMI',
+      appKey: 'Db16aQKaknF6yJwsGqoAbrXX',
+      placeholder: '伊人风度翩翩处处留香月光山中悠悠亮',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (false) { 
+      initData.requiredFields= (''.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign({}, initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="1544998613" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-theme="#2980b9" data-autoplay="false" muted></div><link rel="stylesheet" href="/css/allengg.css"><script data-pjax src="/js/allen.js"><script defer src="https://rmt.dogedoge.com/fetch/~/source/jsdelivr/npm/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="https://cdn.jsdelivr.net/gh/sirxemic/jquery.ripples/dist/jquery.ripples.js"></script><script defer data-pjax src="/js/ripples.js"></script><script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script><script defer data-pjax src="/js/weather.js"></script><script async src="https://rmt.dogedoge.com/fetch/~/source/jsdelivr/gh/CodeByZach/pace/pace.min.js"></script><script async src="https://cdn.jsdelivr.net/gh/weilining/jsdelivr/javascript/weather/weather.butterfly@3.4.1.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="精准,优雅,精忠报国" data-fontsize="15px" data-random="false" async="async"></script><script src="//code.tidio.co/rtj5vfgt7rywnszwq9npj0wpnmeeuqkt.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/bilibili/"]):not([href="/bb/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})</script></div></body></html>
